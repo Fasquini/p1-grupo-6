@@ -162,3 +162,9 @@ section.contenido{
     justify-self: center;
     color: #6B7280;
 }
+.categoria article{
+    width: 1080px;
+}
+.categoria img{
+    width: 1080px;
+}
