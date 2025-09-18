@@ -92,6 +92,7 @@ section.aleatorio{
     justify-items: center;
     align-items: center;
     display: flex;
+    
 }
 .aleatorio a{
 align-self: center;
@@ -121,6 +122,10 @@ margin-left: 325px;
 .aleatorio img{
     width: 100%;
     border-radius:20px ;
+    
+}
+section .alea{
+    background-color: #005A2B;
 }
 section.divisor{
     width: 100%;
@@ -130,6 +135,7 @@ section.divisor{
     margin-top: 30px;
     margin-bottom: 50px;
 }
+section.alea,
 section.contenido{
     display: flex;
     flex-wrap: wrap;
@@ -140,6 +146,24 @@ section.contenido{
     padding: 25px;
     
 }
+section.alea{
+    background-color: #005A2B;
+    border: solid #D4AF37 5px;
+}
+.alea h2{
+    color: #DADADA;
+}
+.alea p{
+    color: #DADADA;
+}
+.alea a{
+    padding: 15px;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    color: #D4AF37;
+}
+.alea article,
 .contenido article{
     display:flex;
     flex-wrap: wrap; 
@@ -148,13 +172,16 @@ section.contenido{
     width: 49%;
     margin-bottom: 40px;
 }
+.alea img,
 .contenido img{
     width: 100%;
     border-radius: 10px;
 }
+.alea img,
 .contenido p{
     color: #121212;
 }
+
 .contenido a{
     padding: 15px;
     border-radius: 10px;
@@ -162,9 +189,174 @@ section.contenido{
     justify-self: center;
     color: #6B7280;
 }
+
 .categoria article{
     width: 1080px;
 }
 .categoria img{
     width: 1080px;
+}
+ main.log{
+    width: 1140px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+ }
+ section#log{
+   width: 350px;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
+ .log form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 350px;
+ }
+ div#impe.ree input{
+width: 350px;
+ }
+ div.hob{
+    width: 350px;
+ }
+ p.ob{
+width: 350px;
+ }
+ div.hor{
+    width: 350px;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+ div#re.rec{
+    width: 350px;
+ }
+ .hor input{
+    width: 15px;
+ }
+
+ div#imp{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+#imp label{
+    margin-bottom: 5px;
+}
+#imp input{
+    padding: 10px;
+}
+#imp.ree{
+    padding-top: 10px;
+}
+.log div.rec{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    flex-direction: row-reverse;
+}
+.rec label{
+        font-weight: 700;  
+}
+button{
+    border-radius: 10px;
+    padding: 10px;
+    padding-left:55px ;
+    padding-right:55px;
+}
+.log p{
+    color: #D4AF37;
+}
+
+.log .pais{
+    display: flex;
+    flex-direction: column;
+}
+.hor{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+textarea{
+    width: 100%;
+    height: 10vh;
+    margin-top: 5px;
+    padding: 0
+}
+.com,
+.pais,
+.hob label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.opc input{
+    margin: 0;
+    margin-left: 2px;
+}
+
+#gene.opc{
+    flex-direction: row-reverse;
+}
+.opc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    
+}
+select{
+    margin-top: 5px;
+    width: 50%;
+    padding: 10px;
+}
+
+.r{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: flex-end;
+    width: 350px;
+}
+
+.r button{
+    width: 49%;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #EDE8E2;
+}
+
+button{
+    cursor: pointer;
+    background-color: #EDE8E2;
+}
+#re.rec input,
+#re.rec label{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding-top:0;
+}
+#re.rec{
+    padding-top: 10px;
+}
+.ya{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 8px;
+}
+div#btn{
+    display: flex;
+    flex-direction: row;
+}
+span.ya a,
+div.ya a{
+    color: cornflowerblue;
+}
+span.ya a{
+    font-size: 16px;
+}
+span.ya{
+    width: 50%;
 }
