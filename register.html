@@ -52,11 +52,25 @@
                 <label for="">Repetir contraseña</label>
                 <input type="password" name="contraUsuario" value="" placeholder="Repetí tu contraseña" required>
                 </div>
-                
                 <div>
                     <p>Obligatorio.</p>
                 </div>
-
+                <div class="pais">
+                    <label for="">País de nacimiento</label>
+                    <select name="paisUsuario">
+                        <option value="arg">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="bol">Bolivia</option>
+                        <option value="chi">Chile</option>
+                        <option value="col">Colombia</option>
+                        <option value="per">Perú</option>
+                        <option value="ven">Venezuela</option>
+                        <option value="usa">United States of America</option>
+                        <option value="can">Canada</option>
+                        <option value="esp">España</option>
+                        <option value="fr">Francia</option>
+                    </select>
+                </div>
                 <div>
                     <p class="ob">Obligatorio.</p>
                 </div>
@@ -66,9 +80,9 @@
                 <label for="">Género</label>
                 </div>
                      <div class="opc" id="gene">
-                        <span> Otro </span><input type="radio" name="g" value="nn">
-                        <span> Femenino </span><input type="radio" name="g" value="fem">
-                        <span> Masculino </span><input type="radio" name="g" value="masc">
+                        <article><span> Otro </span><input type="radio" name="g" value="nn"></article>
+                       <article> <span> Femenino </span><input type="radio" name="g" value="fem"></article>
+                        <article><span> Masculino </span><input type="radio" name="g" value="masc"></article>
                 </div>
 
                 <div class="rec" id="re">
@@ -76,8 +90,8 @@
                 <input type="checkbox" name="tyc" value="TyC" required>
                 </div>
                 <div id="btn" class="r">
-                <button type="submit">Registrarme</button>
-                <button type="button">Cancelar</button>
+                <button class="register" type="submit">Registrarme</button>
+                <button class="register" type="button">Cancelar</button>
                 </div>
             <div class="ya">
     
