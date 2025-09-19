@@ -284,11 +284,17 @@ width: 100%;
 .rec label{
         font-weight: 700;  
 }
+div#btn.r{
+    justify-content: center;
+}
 button.register{
     border-radius: 10px;
     padding: 10px;
     padding-left:55px ;
     padding-right:55px;
+}
+button.login{
+    justify-self: flex-end;
 }
 .log p{
     color: rgb(210, 37, 37);
@@ -390,6 +396,10 @@ div.ya a{
     color: #D4AF37;
     margin: 5px 5px 0 0;
     font-weight: bold;
+}
+div.ya{
+    justify-content: center;
+    margin-top: 15px;
 }
 span.ya a{
     font-size: 16px;
