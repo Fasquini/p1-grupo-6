@@ -17,27 +17,50 @@ header{
     padding: 20px;
     margin: 10px 10px 20px 10px;
     border: solid #D4AF37 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 header a{
     color: #D4AF37;
 }
+article.logo{
+    display: flex;
+    flex-direction: column;
+}
+
 article.logr,
 article.indice{
     align-content: center;
 }
 article.indice{
-    margin-right: 55px;
+    width: 500px;
+}
+nav input{
+    margin-right: 5px;
+}
+nav.menu{
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
 }
 .logr a{
     margin: 0px 10px 0px 10px;
 }
 .logo img{
-    width: 50px;
+    width: 55px;
     padding-left: 85px;
+}
+.logo img.name{
+    width: 100px;
+    padding-left: 65px;
+    padding-top: 5px;
 }
 form{
 display: flex;
 flex-direction: row-reverse;
+}
+form img{
+    width: 50px ;
 }
 button,
 input{
