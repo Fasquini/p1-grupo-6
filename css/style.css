@@ -431,6 +431,9 @@ span.ya{
     width: 50%;
 }
 
+div#btn.r{
+margin-top: 25px;
+}
 
 section.product{
     width: 1140px;
@@ -539,4 +542,33 @@ article.creadores{
 
 .creadores li{
     margin-left: 3px;
+}
+section.divisor#cat{
+    margin-top: 0%;
+    margin-bottom: 1.5%;
+    padding: 8px;
+}
+.divisor#cat h1{
+    color: #ffffffb0;
+    justify-self: center    
+}
+section#bu.divisor{
+    margin-top: 0%;
+    margin-bottom: 1.5%;
+    padding: 10px;
+}
+.divisor#bu h2{
+color:#FFFFFF
+}
+article#bu{
+    width: 32.33333333333%;
+}
+section.aleatorio#cat{
+    width: 1140px;
+}
+.aleatorio#cat article{
+    width: 100%;
+}
+.aleatorio#cat article a{
+    margin-left: 45%;
 }
