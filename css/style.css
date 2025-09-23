@@ -115,21 +115,35 @@ section.aleatorio{
     justify-items: center;
     align-items: center;
     display: flex;
-    
+    margin-bottom: 0%;
 }
 .aleatorio a{
-align-self: center;
-justify-self: center;
 background-color: #D4AF37;
 padding: 15px;
 border-radius: 10px;
 color: #FFFFFF; 
-margin-left: 325px;
+justify-self: left;
 }
-.aleatorio article{
-    width: 800px;
-   margin-bottom: 20px;
+.contenido article.precio,
+.alea article.precio{
+    align-self: center;
+    width: 97%;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 0%;
 }
+.contenido article a p{
+    font-size: smaller;
+}
+.alea article a p{
+    font-size:smaller;
+    color: #005A2B;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #D4AF37;
+    border: solid #ab860d 1px;
+}
+
 .contenido h1,
 .contenido h2{
     color: #121212;
@@ -509,7 +523,12 @@ article.comment{
     border-radius: 15px;
     padding: 5px;
     background-color: #D4AF37;
-    border: solid #ab860d 4px;
+    border: solid #ab860d 2px;
+    font-size: smaller;
+}
+.product a p{
+    justify-self: center;
+    width: fit-content;
 }
 ul.product{
     padding-left: 15px;
