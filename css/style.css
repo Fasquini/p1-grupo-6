@@ -435,6 +435,10 @@ div#btn.r{
 margin-top: 25px;
 }
 
+.product img.rating{
+    width: 100px;
+}
+
 section.product{
     width: 1140px;
     background-color: #005A2B;
@@ -453,15 +457,28 @@ section.product{
     flex-direction: column;
 }
 .product img{
-    width: 100%;
+    width: 96%;
     border-radius: 20px;
+    align-self: center;
 }
-
+.product h4{
+    color: #FFFFFF;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 24px;
+     margin-bottom: 0%;
+    text-decoration:underline #D4AF37 3px ;
+}
+.product h6{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: #12121297;
+}
 .product h3 {
     color: #D4AF37;
     padding-left: 1.5%;
     margin-bottom: 8px;
-}
+}   
 .product p{
     color: #FFFFFF;
     width: 97%;
@@ -470,7 +487,19 @@ section.product{
 .product a p{
     justify-content: center;
 }
-
+article.comment{
+    margin-left: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+.comment img{
+    margin-left: 10px; 
+}
+.comment p{
+    margin-top: 0%;
+    padding-left: 0%;
+}
 .product a{
     align-self: flex-end;
     align-content: center;
