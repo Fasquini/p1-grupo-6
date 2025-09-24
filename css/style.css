@@ -23,6 +23,9 @@ header{
 header a{
     color: #D4AF37;
 }
+section.nave{
+    display: none;
+}
 article.logo{
     display: flex;
     flex-direction: column;
@@ -622,6 +625,7 @@ section#bu.divisor{
     margin-top: 0%;
     margin-bottom: 1.5%;
     padding: 10px;
+    background-color: #005A2B;
 }
 .divisor#bu h2{
 color:#FFFFFF
@@ -745,11 +749,18 @@ section.aleatorio#cat{
         margin: 0 10px;
         font-size: 14px;
     }
-
+   
+    
     aside {
-        display: none; 
-    }
+        display:none;
 
+    }
+    
+    .product h1{
+        text-align: start;
+        padding: 10px 10px 10px 0;
+        margin-left: 10px;
+    }
     section.aleatorio,
     section.alea,
     section.contenido,
@@ -852,5 +863,16 @@ section.aleatorio#cat{
     }
     div#imp.ree input{
         width: 95%;
+    }
+    
+    section.nave{
+        display: block;
+        padding: 0.0000001%;
+        height: 2px;
+        background-color: #D4AF37;
+        width: 70%;
+        border-radius: 15px;
+        align-self: center;
+
     }
 }
