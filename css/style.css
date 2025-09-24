@@ -76,6 +76,7 @@ border: solid ;
 text-align: center;
 padding: 14px 3px 14px 3px;
 }
+
 button{
     width: 85px;
 }
@@ -123,6 +124,9 @@ padding: 15px;
 border-radius: 10px;
 color: #FFFFFF; 
 justify-self: left;
+}
+section.aleatorio article h1{
+    margin-top: 0;
 }
 .contenido article.precio,
 .alea article.precio{
@@ -199,6 +203,13 @@ section.alea{
     align-self: center;
     justify-self: center;
     color: #D4AF37;
+}
+.contenido article.precio,
+.alea article.precio{
+    border-bottom: solid 3px #D4AF37;
+}
+.contenido article#bu {
+    border-bottom:solid 3px #D4AF37 ;
 }
 .alea article,
 .contenido article{
@@ -461,17 +472,22 @@ section.product{
 }
 .product h1{
     padding: 25px 0 0 20px;
+    margin-left: 25px;
     color: #D4AF37;
 }
 .product article{
-    width: 97%;
+    width: 96%;
     justify-self: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
+article.valor a{
+    align-self: flex-start;
+    margin: 20px 0 20px 10px;
+}
 .product img{
-    width: 96%;
+    width: 97%;
     border-radius: 20px;
     align-self: center;
 }
@@ -483,11 +499,13 @@ section.product{
      margin-bottom: 0%;
     text-decoration:underline #D4AF37 3px ;
 }
+
 .product h6{
     margin-top: 0%;
     margin-bottom: 0%;
-    color: #12121297;
+    color: #ffffffa8;
 }
+
 .product h3 {
     color: #D4AF37;
     padding-left: 1.5%;
