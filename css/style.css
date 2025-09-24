@@ -640,22 +640,54 @@ section.aleatorio#cat{
 }
 @media (max-width: 425px) {
     body {
-        width: 100%;
+        width: 97%;
         margin: 0;
         padding: 0;
-        background-size: cover;
+        
         background-position: center;
         font-size: 14px;
+        justify-self: center;
+    }
+    main{
+        padding: 0px;
+        margin: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0px 8px;
+        box-sizing: border-box;
+
     }
 
     header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 412.25px;
         padding: 12px;
         box-sizing: border-box;
+    }
+    header input{
+        width: 175px;
+    }
+    article.logr{
+        display: flex;
+        flex-direction: column;
+    }
+    .logr a{
+        text-align: center;
+        padding: 2px;
+    }
+    section.divisor{
+        width: 370px;
+        padding: 5px 8px 5px 8px;
+        margin: 6px 2px 6px 2px;
+    }
+    article.indice{
+        width: 50%;
     }
 
     article.logo {
@@ -666,11 +698,13 @@ section.aleatorio#cat{
     }
 
     .logo img {
-        width: 40px;
-        margin: 0 auto;
+        width: 30px;
         display: block;
+        padding-left: 20px;
     }
-
+    header form a img{
+        width: 35px;
+    }
     .list {
         display: none; 
     }
@@ -711,14 +745,6 @@ section.aleatorio#cat{
     .logr a {
         margin: 0 10px;
         font-size: 14px;
-    }
-
-    main {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0 8px;
-        box-sizing: border-box;
     }
 
     aside {
@@ -791,16 +817,20 @@ section.aleatorio#cat{
         height: auto;
         box-sizing: border-box;
     }
-
+    .pie article p{
+        text-align: center;
+    }
     .pie article,
     .creadores {
         width: 95%;
         margin-bottom: 12px;
         text-align: center;
     }
-
     .pie ul,
     .creadores ul {
         padding: 0;
+    }
+    main.log{
+        width: 390px;
     }
 }
