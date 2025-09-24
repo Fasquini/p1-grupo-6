@@ -638,3 +638,169 @@ section.aleatorio#cat{
 .aleatorio#cat article a{
     margin-left: 45%;
 }
+@media (max-width: 425px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        font-size: 14px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    article.logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 40px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .list {
+        display: none; 
+    }
+
+    article.indice {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 8px 0;
+    }
+
+    nav.menu {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav input {
+        flex: 1;
+        max-width: 85%;
+        padding: 6px 10px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    form img {
+        width: 22px;
+        margin-left: 5px;
+    }
+
+    .logr {
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logr a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
+    aside {
+        display: none; 
+    }
+
+    section.aleatorio,
+    section.alea,
+    section.contenido,
+    section.product {
+        width: 100%;
+        margin: 12px 0;
+        padding: 14px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .alea article,
+    .contenido article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .alea img,
+    .contenido img,
+    .aleatorio img,
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-align: justify;
+    }
+
+    .alea a,
+    .contenido a,
+    .aleatorio a,
+    .product a {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 13px;
+        margin: 10px auto 0 auto;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .alea article.precio a p,
+    .contenido article.precio a p {
+        font-size: 12px;
+        margin: 0;
+        padding: 4px 8px;
+    }
+
+    footer,
+    section.pie {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 14px 0;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .pie article,
+    .creadores {
+        width: 95%;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .pie ul,
+    .creadores ul {
+        padding: 0;
+    }
+}
