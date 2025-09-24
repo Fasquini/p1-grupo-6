@@ -643,7 +643,6 @@ section.aleatorio#cat{
         width: 97%;
         margin: 0;
         padding: 0;
-        
         background-position: center;
         font-size: 14px;
         justify-self: center;
@@ -806,7 +805,12 @@ section.aleatorio#cat{
         margin: 0;
         padding: 4px 8px;
     }
-
+    article#bu{
+        width: 48%;
+    }
+    article#bu p{
+        display: none;
+    }
     footer,
     section.pie {
         width: 100%;
@@ -831,6 +835,22 @@ section.aleatorio#cat{
         padding: 0;
     }
     main.log{
+        width: 410px;
+        justify-content: center;
+    }
+    main.log form{
+        width: 100%;
+    }
+    section#log{
+        justify-content: center;
+    }
+    section#log,
+    div.ya,
+    div#btn.r,
+    div#imp.ree{
         width: 390px;
+    }
+    div#imp.ree input{
+        width: 95%;
     }
 }
