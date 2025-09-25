@@ -120,6 +120,10 @@ section.aleatorio{
     align-items: center;
     display: flex;
     margin-bottom: 0%;
+    border: solid #D4AF37 3px;
+}
+section.aleatorio article{
+    height: 97%;
 }
 .aleatorio a{
 background-color: #D4AF37;
@@ -192,7 +196,7 @@ section.contenido{
 }
 section.alea{
     background-color: #005A2B;
-    border: solid #D4AF37 5px;
+    
 }
 .alea h2{
     color: #DADADA;
@@ -208,11 +212,13 @@ section.alea{
     color: #D4AF37;
 }
 .contenido article.precio,
-.alea article.precio{
+.alea article.precio,
+.categoria article,
+.contenido article#bu {
     border-bottom: solid 3px #D4AF37;
 }
-.contenido article#bu {
-    border-bottom:solid 3px #D4AF37 ;
+.contenido article.category{
+    border-bottom: none;
 }
 .alea article,
 .contenido article{
@@ -628,7 +634,8 @@ section#bu.divisor{
     background-color: #005A2B;
 }
 .divisor#bu h2{
-color:#FFFFFF
+color:#FFFFFF;
+padding-left: 15px;
 }
 article#bu{
     width: 32.33333333333%;
@@ -638,6 +645,7 @@ section.aleatorio#cat{
 }
 .aleatorio#cat article{
     width: 100%;
+    height: fit-content;
 }
 .aleatorio#cat article a{
     margin-left: 45%;
