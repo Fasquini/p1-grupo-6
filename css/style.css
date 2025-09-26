@@ -3,6 +3,8 @@ body{
     width: 1140px;
     justify-self: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
 }
 header{
     display: flex;
@@ -788,11 +790,8 @@ aside li {
     height: fit-content;
     margin: 0;
     padding: 5px 5px;
-    width: fit-content;
-    border: none; 
+    width: fit-content; 
     background: none;
-    text-decoration: underline 2.5px; 
-    text-decoration-color: #D4AF37; 
 }
 
     
@@ -855,6 +854,12 @@ aside li {
         font-size: 12px;
         margin: 0;
         padding: 4px 8px;
+    }
+    article.precio{
+        justify-items: center;
+    }
+    section#cat.aleatorio article.precio a{
+        margin:0px 0px 0px 135px;
     }
     article#bu{
         width: 48%;
