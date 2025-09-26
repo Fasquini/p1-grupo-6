@@ -708,6 +708,9 @@ section.aleatorio#cat{
         justify-content: center;
         margin-bottom: 10px;
     }
+    .alea article.precio a{
+        margin-right: 0px;
+    }
 
     .logo img {
         width: 30px;
