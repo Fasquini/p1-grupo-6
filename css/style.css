@@ -262,8 +262,9 @@ section.alea{
     justify-self: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
  }
- section#log{
+ #log{
    width: 450px;
     justify-self: center;
     justify-content: center;
@@ -276,7 +277,7 @@ section.alea{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
+    width: 500px;
     justify-self: center;
     align-self: center;
  }
@@ -284,10 +285,10 @@ section.alea{
     color: #005A2B;
  }
  div#imp.ree{
-    width: 95%;
+    width: 500px;
  }
- div#impe.ree input{
-width: 100%;
+ #imp.ree input{
+    width: 100%;
  background-color: #FFFFFF;
  }
  
@@ -305,9 +306,7 @@ width: 100%;
  div#re.rec{
     width: 350px;
  }
- div#imp.ree input{
-    width: 100%;
- }
+
  .hor input{
     width: 15px;
     background-color: #FFFFFF;
@@ -627,7 +626,7 @@ section.divisor#cat{
     color: #ffffffb0;
     justify-self: center    
 }
-section#bu.divisor{
+#bu.divisor{
     margin-top: 0%;
     margin-bottom: 1.5%;
     padding: 10px;
@@ -643,11 +642,11 @@ article#bu{
 section.aleatorio#cat{
     width: 1140px;
 }
-.aleatorio#cat article{
+#cat article{
     width: 100%;
     height: fit-content;
 }
-.aleatorio#cat article a{
+#cat article a{
     margin-left: 45%;
 }
 @media (max-width: 425px) {
@@ -677,7 +676,7 @@ section.aleatorio#cat{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 412.25px;
+        width: 407.62px;
         padding: 12px;
         box-sizing: border-box;
     }
@@ -758,17 +757,51 @@ section.aleatorio#cat{
         font-size: 14px;
     }
    
-    
-    aside {
-        display:none;
 
-    }
+    aside {
+    width: 94%;
+    margin: 10px 0;
+    background-color: #005A2B;
+    border-radius: 12px;
+    padding: 8px;
+    height: fit-content;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    flex-wrap: wrap;       
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: fit-content;
+    height: 300px;
+    width: 100%;
+    
+}
+
+aside li {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 13px;
+    height: fit-content;
+    margin: 0;
+    padding: 5px 5px;
+    width: fit-content;
+    border: none; 
+    background: none;
+    text-decoration: underline 2.5px; 
+    text-decoration-color: #D4AF37; 
+}
+
     
     .product h1{
         text-align: start;
         padding: 10px 10px 10px 0;
         margin-left: 10px;
     }
+    section#cat.aleatorio,
     section.aleatorio,
     section.alea,
     section.contenido,
@@ -796,13 +829,12 @@ section.aleatorio#cat{
     }
 
     h1, h2 {
-        font-size: 1.1rem;
+        font-size: 18px;
         text-align: center;
     }
 
     p {
-        font-size: 0.9rem;
-        line-height: 1.4rem;
+        font-size: 15px;    
         text-align: justify;
     }
 
@@ -827,7 +859,7 @@ section.aleatorio#cat{
     article#bu{
         width: 48%;
     }
-    article#bu p{
+    #bu p{
         display: none;
     }
     footer,
