@@ -902,10 +902,11 @@ aside li {
         justify-content: center;
     }
     main.log form{
-        width: 100%;
+        width: 390px;
     }
-    section#log{
+    main.log section#log{
         justify-content: center;
+        width:390px;
     }
     section#log,
     div.ya,
