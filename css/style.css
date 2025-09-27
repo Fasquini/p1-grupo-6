@@ -63,6 +63,7 @@ nav.menu{
 form{
 display: flex;
 flex-direction: row-reverse;
+
 }
 form img{
     width: 50px ;
@@ -290,7 +291,7 @@ section.alea{
     width: 500px;
  }
  #imp.ree input{
-    width: 100%;
+    width: 95%;
  background-color: #FFFFFF;
  }
  
@@ -332,6 +333,9 @@ section.alea{
 #imp.ree{
     padding-top: 10px;
     width: 350px;
+}
+main.log section#log{
+    width: 500px;
 }
 .log div.rec{
     display: flex;
