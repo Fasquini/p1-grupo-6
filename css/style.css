@@ -6,6 +6,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+/* Cabecera */
 header{
     display: flex;
     justify-content: space-between;
@@ -86,12 +87,17 @@ padding: 14px 3px 14px 3px;
 button{
     width: 85px;
 }
+/* Fin de cabecera*/
+
+/* Comienzo de secciones*/
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     
 }
+
+        /* Inicio de aside con categorias*/
 aside{
     width: 295px;
     background-color: #005A2B ;  
@@ -99,8 +105,7 @@ aside{
     height: 786.95px;
     border: solid #D4AF37 3px;
 }
-    
-
+     
 ul{
     list-style: none;
     display: flex;
@@ -112,7 +117,9 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+        /* Fin de aside con categorias*/
 
+/* Seccion 1 y 2: Productos aleatorios y Mas vendidos*/
 section.aleatorio{
     width: 780px;
     padding: 25px;
@@ -256,6 +263,8 @@ section.alea{
 .categoria img{
     width: 1080px;
 }
+
+/* Inicio de Login con formato de form compartido con Register*/
 .log h1{
     align-self: center;
     color: #D4AF37;
@@ -287,6 +296,10 @@ section.alea{
  label {
     color: #005A2B;
  }
+ main.log section#log{
+    width: 500px;
+}
+ /* Inputs repetidos en Register y Login*/
  div#imp.ree{
     width: 500px;
  }
@@ -310,11 +323,6 @@ section.alea{
     width: 350px;
  }
 
- .hor input{
-    width: 15px;
-    background-color: #FFFFFF;
- }
-
  div#imp{
     display: flex;
     flex-direction: column;
@@ -334,27 +342,8 @@ section.alea{
     padding-top: 10px;
     width: 350px;
 }
-main.log section#log{
-    width: 500px;
-}
-.log div.rec{
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 30px;
-    flex-direction: row-reverse;
-}
-.rec label{
-        font-weight: 700;  
-}
-div#btn.r{
-    justify-content: center;
-}
-button.register{
-    border-radius: 10px;
-    padding: 10px;
-    padding-left:55px ;
-    padding-right:55px;
-}
+/* Boton de Login*/
+
 button.login{
     justify-self: flex-end;
 }
@@ -362,22 +351,7 @@ button.login{
     color: rgb(210, 37, 37);
 }
 
-.log .pais{
-    display: flex;
-    flex-direction: column;
-}
-.hor{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-.com,
-.pais,
-.hob label{
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
+/* Opciones de genero*/
 .opc input{
     margin: 0;
     margin-left: 2px;
@@ -386,9 +360,6 @@ div#gene.opc{
     width: 100%;
     align-self: flex-start;
     padding-top: 15px;
-}
-
-#gene.opc{
     flex-direction: row-reverse;
 }
 .opc{
@@ -397,9 +368,7 @@ div#gene.opc{
     margin-top: 5px;
     
 }
-div#re.rec{
-    width: 100%;
-}
+/* Opciones de pais*/
 div.pais{
     padding-top: 10px;
 }
@@ -418,6 +387,53 @@ select{
     padding: 10px;
 }
 
+
+/* Botonera y fin de formulario de Register */
+div#re.rec{
+    width: 100%;
+}
+#re.rec input,
+#re.rec label{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding-top:0;
+}
+#re.rec{
+    padding-top: 30px;
+}
+.log div.rec{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    flex-direction: row-reverse;
+}
+.rec label{
+        font-weight: 700;  
+}
+
+.log div.rec{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    flex-direction: row-reverse;
+}
+.rec label{
+        font-weight: 700;  
+}
+div#btn.r{
+    justify-content: center;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+button.register{
+    border-radius: 10px;
+    padding: 10px;
+    padding-left:55px ;
+    padding-right:55px;
+}
 .r{
     flex-direction: row;
     flex-wrap: nowrap;
@@ -433,25 +449,37 @@ select{
     color: #FFFFFF;
 }
 
-#re.rec input,
-#re.rec label{
-    margin-top: 8px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    padding-top:0;
+/* Inputs que solo aparecen en Register*/
+ .hor input{
+    width: 15px;
+    background-color: #FFFFFF;
+ }
+ div.hor{
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+.log .pais{
+    display: flex;
+    flex-direction: column;
 }
-#re.rec{
-    padding-top: 30px;
+.hor{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
+.com,
+.pais,
+.hob label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Botones de interconexion entre Register y Login*/
 .ya{
     display: flex;
     flex-direction: row-reverse;
     margin-top: 8px;
-}
-div#btn{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 span.ya a,
 div.ya a{
@@ -474,9 +502,9 @@ div#btn.r{
 margin-top: 25px;
 }
 
-.product img.rating{
-    width: 100px;
-}
+
+
+/* Inicio de pagina de detalles de producto*/
 
 section.product{
     width: 1140px;
@@ -574,6 +602,12 @@ ul.product{
 .product li{
     color: #FFFFFF;
 }
+.product img.rating{
+    width: 100px;
+}
+
+/* Inicio de Footer*/
+
 section.pie{
     display: flex;
     flex-wrap: wrap;
@@ -599,7 +633,6 @@ footer{
 .pie ul{
     padding: 2px;
     margin-top: 10px;
-    display: block;
     height: fit-content;
 }
 .creadores h4,
@@ -623,11 +656,13 @@ article.creadores{
 .creadores li{
     margin-left: 3px;
 }
+/* Inicio de seccion de la pagina Category*/
 section.divisor#cat{
     margin-top: 0%;
     margin-bottom: 1.5%;
     padding: 8px;
 }
+
 .divisor#cat h1{
     color: #ffffffb0;
     justify-self: center    
@@ -655,6 +690,8 @@ section.aleatorio#cat{
 #cat article a{
     margin-left: 45%;
 }
+
+/* Media querie mobile L*/
 @media (max-width: 425px) {
     body {
         width: 97%;
@@ -743,8 +780,7 @@ section.aleatorio#cat{
     }
 
     nav input {
-        flex: 1;
-        max-width: 85%;
+        width: 165px;
         padding: 6px 10px;
         font-size: 14px;
         border-radius: 8px;
@@ -801,7 +837,7 @@ aside li {
     background: none;
 }
 
-    
+
     .product h1{
         text-align: start;
         padding: 10px 10px 10px 0;
@@ -830,7 +866,6 @@ aside li {
     .aleatorio img,
     .product img {
         width: 100%;
-        height: auto;
         border-radius: 10px;
     }
 
@@ -881,7 +916,7 @@ aside li {
         align-items: center;
         text-align: center;
         padding: 14px 0;
-        height: auto;
+        height: fit-content;
         box-sizing: border-box;
     }
     .pie article p{
@@ -917,6 +952,8 @@ aside li {
     div#imp.ree input{
         width: 95%;
     }
+
+    /* Linea decorativa entre Login y Register (En el header)*/
     
     section.nave{
         display: block;
