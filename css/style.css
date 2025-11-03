@@ -1,6 +1,6 @@
 body{
     background-image: url(../img/ORNARE_bg_pill_3840x2160.png);
-    width: 1140px;
+    width: 99%;
     justify-self: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-attachment: fixed;
@@ -10,7 +10,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    width: 1100px;
+    width: 97%;
     justify-self: center;
     background-color: #005A2B ;  
     margin-top: 20px;
@@ -22,6 +22,7 @@ header{
     border: solid #D4AF37 3px;
     padding-top: 15px;
     padding-bottom: 15px;
+    height: 70px;
 }
 header a{
     color: #D4AF37;
@@ -99,10 +100,10 @@ main{
 
         /* Inicio de aside con categorias*/
 aside{
-    width: 295px;
+    width: 23%;
     background-color: #005A2B ;  
     border-radius: 20px;
-    height: 786.95px;
+    height: 1000px;
     border: solid #D4AF37 3px;
 }
      
@@ -111,7 +112,8 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 750px;
+    height: 900px;
+    margin-top: 40px;
 }
 a{
     text-decoration: none;
@@ -121,7 +123,7 @@ a{
 
 /* Seccion 1 y 2: Productos aleatorios y Mas vendidos*/
 section.aleatorio{
-    width: 780px;
+    width: 72%;
     padding: 25px;
     margin-bottom: 30px;
     background-color: #005A2B ; 
@@ -164,10 +166,29 @@ section.aleatorio article h1{
     background-color: #D4AF37;
     border: solid #ab860d 1px;
 }
+#cat.aleatorio article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
+}
+article.precio{
+        justify-items: flex-end;
+    }
+    section#cat.aleatorio article.precio a{
+        margin:0;
+        width: fit-content;
+        align-self: flex-end;
+        margin-right:15px ;
+        padding: 20px;
+    }
+    article#bu{
+        width: 48%;
+    }
 .contenido h1,
 .contenido h2{
     color: #121212;
+    height: fit-content;
 }
 .aleatorio h2,
 .aleatorio h1{
@@ -179,6 +200,7 @@ section.aleatorio article h1{
 }
 .aleatorio img{
     width: 100%;
+    align-self: center;
     border-radius:20px ;
     
 }
@@ -197,15 +219,17 @@ section.alea,
 section.contenido{
     display: flex;
     flex-wrap: wrap;
-    width: 1146px;
+    width: 99%;
     justify-content: space-between;   
-    background-color: #DADADA;
+    justify-content: center;
+    background-color: none;
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px 5px 20px 5px;
     
 }
 section.alea{
     background-color: #005A2B;
+    
     
 }
 .alea h2{
@@ -235,13 +259,13 @@ section.alea{
     display:flex;
     flex-wrap: wrap; 
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-evenly;
     width: 49%;
     margin-bottom: 40px;
 }
 .alea img,
 .contenido img{
-    width: 100%;
+    width: 98%;
     border-radius: 10px;
 }
 .alea img,
@@ -507,7 +531,7 @@ margin-top: 25px;
 /* Inicio de pagina de detalles de producto*/
 
 section.product{
-    width: 1140px;
+    width: 99%;
     background-color: #005A2B;
     border-radius: 20px;
     border: solid #D4AF37 4px;
@@ -616,15 +640,18 @@ section.pie{
 }
 section.pie,
 footer{
-    width: 1140px;
+    width: 99%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: #005A2B;
     margin-top: 30px;
+    
 }
 
 footer{
     height: 376px;
+    padding-left: 20px;
+    
 }
 .pie article{
     width: 20%;
@@ -681,7 +708,7 @@ article#bu{
     width: 32.33333333333%;
 }
 section.aleatorio#cat{
-    width: 1140px;
+    width: 99%;
 }
 #cat article{
     width: 100%;
