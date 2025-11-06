@@ -8,6 +8,25 @@ body{
     
 }
 /* Cabecera */
+header.alerta{
+    display: none;
+    width: 27%;
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 4px;
+    justify-content: center;
+}
+.alerta p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #D4AF37;
+    justify-self: center;
+    margin: 0;
+    padding: 3px;
+    align-self: center;
+    font-weight: 700;
+
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -15,11 +34,10 @@ header{
     justify-self: center;
     background-color: #005A2B ;  
     margin-top: 20px;
-   
     display: flex;
     color: #121212 ;
     padding: 20px 0px 20px 0px;
-    margin: 10px 10px 20px 10px;
+    margin: 10px 10px 40px 10px;
     border: solid #D4AF37 3px;
     border-right: 0;
     border-left: 0;
