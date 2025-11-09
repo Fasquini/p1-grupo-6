@@ -36,34 +36,34 @@ fetch('https://dummyjson.com/products?limit=194')
 .then(function(AllProducts){
   productos = AllProducts.products
   console.log(productos)
-  categoria = productos.category
+  let contenidoInicio = document.querySelector("section.alea");
+  contenidoInicio.innerHTML = "";
+  let contenidoMasComprados = document.querySelector("section.contenido");
+  contenidoMasComprados.innerHTML="";
 
-  let contenidoCategorias = document.querySelector("section.categoria");
-contenidoCategorias.innerHTML = "";
 for(i=0;i<productos.length;i++){
-    if(categoria == "mens-watches"){
-  contenidoCategorias.innerHTML += `
-        <article>
-        <article class="reborde">
-          <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
-        </article>
-          <h2>${productos[i].title}</h2>
-          <p>${productos[i].description}</p>
-          <p><span>Marca:</span> ${productos[i].brand}</p>
-          <p><span>Precio:</span> $${productos[i].price}</p>
-          <p><span>Stock:</span> ${productos[i].stock}</p>
-          <p><span>Rating:</span> ${productos[i].rating}</p>
-          <div class="category">
-            <a href="product.html?id=${productos[i].id}">Ver más</a>
-          </div>
-        </article>
+    if(productos[i].category == "mens-watches"){
+    contenidoInicio.innerHTML += `
+    <article>
+    
+         <img src= ${productos[i].thumbnail} alt= ${productos[i].title}>
+        <h2>${productos[i].title}</h2>
+        <p>${productos[i].description}</p>
+         <article class="precio"><a href=product.html?id=${productos[i].id}>Ver Más</a> <a href=""><p> $${productos[i].price} USD</p></a></article>
+         </article>
       `;
     }
-    else{
-        
+    if(productos[i].category == "mens-shoes"){
+        contenidoMasComprados.innerHTML += `<article>
+    
+         <img src= ${productos[i].thumbnail} alt= ${productos[i].title}>
+        <h2>${productos[i].title}</h2>
+        <p>${productos[i].description}</p>
+         <article class="precio"><a href=product.html?id=${productos[i].id}>Ver Más</a> <a href=""><p> $${productos[i].price} USD</p></a></article>
+         </article>`
     }
-        
     }
+
   });
 
 

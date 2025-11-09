@@ -287,14 +287,30 @@ section.contenido{
     flex-wrap: wrap;
     padding: 150px;
 }
+section.alea article{
+    display: flex;
+}
 .contenido .categoria article{
     width: 50%;
     display: flex;
+}
+.alea article.reborde{
+   display: block;
+   width: 75%;
+   height: 50%;
+}
+.alea article.reborde,
+.alea article img{
+    align-self: center;
+    width: 40%;
+
 }
 .contenido .categoria article img{
     width: 70%;
     align-self: center;
 }
+.alea article h2,
+.alea article p,
 .contenido .categoria article h2,
 .contenido .categoria article p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -345,8 +361,9 @@ section.alea{
 }
 .alea img,
 .contenido img{
-    width: 98%;
+    width: 50%;
     border-radius: 10px;
+    align-self: center;
 }
 .alea img,
 .contenido p{
