@@ -177,6 +177,7 @@ justify-self: left;
 section.aleatorio article h1{
     margin-top: 0;
 }
+
 .contenido article.precio,
 .alea article.precio{
     align-self: center;
@@ -188,6 +189,7 @@ section.aleatorio article h1{
 .contenido article a p{
     font-size: smaller;
 }
+.conenido article.card a p,
 .alea article a p{
     font-size:smaller;
     color: #005A2B;
@@ -200,15 +202,30 @@ section.aleatorio article h1{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
+article.reborde{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+section#cat.aleatorio article img{
+        width: 30%;
+        
+    }
+#cat.aleatorio h2{
+    color: #D4AF37;
+}
+#cat.aleatorio p{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 article.precio{
-        justify-items: flex-end;
+        justify-items: center;
     }
     section#cat.aleatorio article.precio a{
         margin:0;
         width: fit-content;
-        align-self: flex-end;
+        align-self: center;
         margin-right:15px ;
         padding: 20px;
     }
@@ -237,6 +254,7 @@ article.precio{
 section .alea{
     background-color: #005A2B;
 }
+
 section.divisor{
     width: 100%;
     background-color: #D4AF37;
@@ -256,6 +274,38 @@ section.contenido{
     
     padding: 20px 5px 20px 5px;
     
+}
+.categoria div.category,
+.categoria div.category a{
+    padding: 6px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.categoria{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 150px;
+}
+.contenido .categoria article{
+    width: 50%;
+    display: flex;
+}
+.contenido .categoria article img{
+    width: 70%;
+    align-self: center;
+}
+.contenido .categoria article h2,
+.contenido .categoria article p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 90%;
+}
+.contenido .categoria article h2,
+.contenido .categoria article span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 90%;
+    font-weight: 700;
+    color: #D4AF37;
 }
 section.alea{
     background-color: #005A2B;
@@ -905,6 +955,7 @@ aside li {
         padding: 10px 10px 10px 0;
         margin-left: 10px;
     }
+
     section#cat.aleatorio,
     section.aleatorio,
     section.alea,
