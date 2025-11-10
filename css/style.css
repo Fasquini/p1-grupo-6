@@ -55,10 +55,13 @@ article.logo{
     display: flex;
     flex-direction: column;
 }
-
+article.logr{
+    padding-right: 70px;
+}
 article.logr,
 article.indice{
     align-content: center;
+    
 }
 article.indice{
     width: 500px;
@@ -177,7 +180,7 @@ justify-self: left;
 section.aleatorio article h1{
     margin-top: 0;
 }
-
+.categoria article#bu .precio,
 .contenido article.precio,
 .alea article.precio{
     align-self: center;
@@ -234,7 +237,7 @@ article.precio{
     }
 .contenido h1,
 .contenido h2{
-    color: #121212;
+    color: #005A2B;
     height: fit-content;
 }
 .aleatorio h2,
@@ -294,16 +297,18 @@ section.alea article{
     width: 50%;
     display: flex;
 }
-.alea article.reborde{
-   display: block;
-   width: 75%;
-   height: 50%;
-}
-.alea article.reborde,
+
 .alea article img{
     align-self: center;
     width: 40%;
 
+}
+.categoria article div{
+    padding: 10px 0px 15px 55%;
+    width: fit-content;
+}
+.categoria article span{
+    width: fit-content;
 }
 .contenido .categoria article img{
     width: 70%;
@@ -329,10 +334,12 @@ section.alea{
     
 }
 .alea h2{
-    color: #DADADA;
+    color:rgba(231, 177, 0, 0.8);
+    align-self: center;
 }
 .alea p{
     color: #DADADA;
+    align-self: center;
 }
 .alea a{
     padding: 15px;
@@ -347,6 +354,7 @@ section.alea{
 .contenido article#bu {
     border-bottom: solid 3px #D4AF37;
 }
+.categoria article#bu article.precio,
 .contenido article.category{
     border-bottom: none;
 }
@@ -358,7 +366,16 @@ section.alea{
     justify-content:space-evenly;
     width: 49%;
     margin-bottom: 40px;
+    margin-top: 8px;
 }
+
+section.alea article img {
+  background-color: #fff;
+  padding: 14px 25% 5px 25%;           
+  border-radius: 12px;
+  display: inline-block;  
+}
+
 .alea img,
 .contenido img{
     width: 50%;
@@ -858,6 +875,7 @@ section.aleatorio#cat{
     article.logr{
         display: flex;
         flex-direction: column;
+        padding-right: 20px;
     }
     .logr a{
         text-align: center;
@@ -1020,7 +1038,7 @@ aside li {
         border-radius: 8px;
         text-align: center;
     }
-
+    
     .alea article.precio a p,
     .contenido article.precio a p {
         font-size: 12px;

@@ -26,24 +26,25 @@ fetch('https://dummyjson.com/products?limit=194')
     if (Categoria == productos[i].category) {
       contenidoCategorias.innerHTML += `
         <article>
-          <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
-          <h2>${productos[i].title}</h2>
-          <p>${productos[i].description}</p>
-          <p><span>Marca:</span> ${productos[i].brand}</p>
-          <p><span>Precio:</span> $${productos[i].price}</p>
-          <p><span>Stock:</span> ${productos[i].stock}</p>
-          <p><span>Rating:</span> ${productos[i].rating}</p>
-          <div class="category">
-            <a href="product.html?id=${productos[i].id}">Ver más</a>
-          </div>
-        </article>
-      `;
+  <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
+  <h2>${productos[i].title}</h2>
+  <p>${productos[i].description}</p>
+  <p><span>Marca:</span> ${productos[i].brand}</p>
+  <p><span>Stock:</span> ${productos[i].stock}</p>
+  <p><span>Rating:</span> ${productos[i].rating}</p>
+
+  <div>
+    <a href="product.html?product.html?category=${productos[i].category}&id=${productos[i].id}>Ver más</a>
+    <span>$${productos[i].price} USD</span>
+  </div>
+</article>  `
+      ;
      destacado.innerHTML = `
      <article>
      <img src=${productos[i].thumbnail} alt="${productos[i].title}">
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <article class="precio"><a href= product.html?id=${productos[i].id}  >Ver Más</a> </article>
+         <article class="precio"><a href= product.html?category=${productos[i].category}&id=${productos[i].id}  >Ver Más</a> </article>
     </article>`
     }
   }

@@ -28,6 +28,19 @@ form.addEventListener('submit', function(e) {
 
   }
 });
+let logYReg = document.querySelectorAll("article.logr a")
+for (i=0;i<logYReg.length;i++){
+logYReg[i].addEventListener("mouseover", function() {
+      this.style.color = "rgba(231, 177, 0, 0.8)";
+      this.style.fontSize = "17px";
+      this.style.fontWeight = "700";
+    });
+  logYReg[i].addEventListener("mouseout", function() {
+      this.style.color = "";
+      this.style.fontSize = "";
+      this.style.fontWeight = "";
+    });
+}
 
 fetch('https://dummyjson.com/products?limit=194')
 .then(function(response){
@@ -49,7 +62,7 @@ for(i=0;i<productos.length;i++){
          <img src= ${productos[i].thumbnail} alt= ${productos[i].title}>
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <article class="precio"><a href=product.html?id=${productos[i].id}>Ver Más</a> <a href=""><p> $${productos[i].price} USD</p></a></article>
+         <article class="precio"><a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a> <a href=""><p> $${productos[i].price} USD</p></a></article>
          </article>
       `;
     }
@@ -59,12 +72,41 @@ for(i=0;i<productos.length;i++){
          <img src= ${productos[i].thumbnail} alt= ${productos[i].title}>
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <article class="precio"><a href=product.html?id=${productos[i].id}>Ver Más</a> <a href=""><p> $${productos[i].price} USD</p></a></article>
+         <article class="precio"><a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a> <a href="product.html?category=${productos[i].category}id=${productos[i].id}"><p> $${productos[i].price} USD</p></a></article>
          </article>`
+          
     }
     }
+    let links = document.querySelectorAll(".precio a");
+  for (i = 0; i < links.length; i++) {
+    links[i].addEventListener("mouseover", function() {
+      this.style.color = "rgba(231, 177, 0, 0.8)";
+      this.style.fontSize = "16px";
+      this.style.fontWeight = "700";
+    });
+    links[i].addEventListener("mouseout", function() {
+      this.style.color = "";
+      this.style.fontSize = "";
+      this.style.fontWeight = "";
+    });
+  }
+  let categs = document.querySelectorAll("aside ul li a");
+  for (i = 0; i < categs.length; i++) {
+    categs[i].addEventListener("mouseover", function() {
+      this.style.color = "rgba(231, 177, 0, 0.8)";
+      this.style.fontSize = "30px";
+      this.style.fontWeight = "700";
+    });
+    categs[i].addEventListener("mouseout", function() {
+      this.style.color = "";
+      this.style.fontSize = "";
+      this.style.fontWeight = "";
 
-  });
+    });
+  }
+});
+
+
 
 
 
