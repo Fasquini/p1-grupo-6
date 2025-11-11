@@ -58,7 +58,8 @@ fetch('https://dummyjson.com/products?limit=194')
         <p>${productos[i].description}</p>
          <a href="product.html?id=${productos[i].id}">Ver Más</a>
 
-    </article> `
+    </article> `;
+    
     hay.style.display = "block";
       ;
   }
@@ -71,16 +72,16 @@ fetch('https://dummyjson.com/products?limit=194')
          <a href="product.html?id=${productos[i].id}">Ver Más</a>
 
     </article>`
-    msj.textContent += `<h2>"${Busqueda}"</h2>`
     hay.style.display = "block";
     
 
   }
-  else {
+  else if (Busqueda==="") {
 
     noHay.style.display = "block";
   }
 
 }
+msj.textContent += ` . . .  "${Busqueda}"`
 })
   
