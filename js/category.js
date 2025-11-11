@@ -32,12 +32,11 @@ fetch('https://dummyjson.com/products?limit=194')
   <p><span>Marca:</span> ${productos[i].brand}</p>
   <p><span>Stock:</span> ${productos[i].stock}</p>
   <p><span>Rating:</span> ${productos[i].rating}</p>
-
   <div>
-    <a href="product.html?product.html?category=${productos[i].category}&id=${productos[i].id}>Ver más</a>
-    <span>$${productos[i].price} USD</span>
+    <article class="precio"><a href= product.html?category=${productos[i].category}&id=${productos[i].id}  >Ver Más</a> </article>
+    <span class ="precio">$${productos[i].price} USD</span>
   </div>
-</article>  `
+</article> `
       ;
      destacado.innerHTML = `
      <article>

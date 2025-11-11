@@ -83,6 +83,7 @@ for(i=0;i<productos.length;i++){
       this.style.color = "rgba(231, 177, 0, 0.8)";
       this.style.fontSize = "16px";
       this.style.fontWeight = "700";
+      
     });
     links[i].addEventListener("mouseout", function() {
       this.style.color = "";
