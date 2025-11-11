@@ -10,7 +10,7 @@ form.addEventListener('submit', function(e) {
     document.querySelector('header.alerta p').textContent = 'Por favor escribí algo antes de buscar ';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
-    return; 
+    
   }
 
   
@@ -18,13 +18,13 @@ form.addEventListener('submit', function(e) {
     document.querySelector('header.alerta p').textContent = 'Tu búsqueda debe constar de un mínimo de 3 caracteres.';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
-    return;     
+     
   }
 
   else{
   document.querySelector('header.alerta').style.display = "none"; 
-  localStorage.setItem('busqueda', valor); 
-  window.location.href = 'catalogo.html'; 
+  let valor = input.value; 
+  window.location.href = "resultados_de_busqueda.html?busqueda=" + valor
 
   }
 });
