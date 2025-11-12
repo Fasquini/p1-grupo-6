@@ -1,5 +1,5 @@
 let form = document.querySelector('.menu form');
-let input = document.getElementById('buscador');
+let input = document.querySelector('input');
 form.addEventListener('submit', function(e) {
   e.preventDefault(); 
   let valor = input.value; 
@@ -56,7 +56,7 @@ fetch('https://dummyjson.com/products?limit=194')
         <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <a href="product.html?id=${productos[i].id}">Ver Más</a>
+         <a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a>
 
     </article> `;
     
@@ -69,7 +69,7 @@ fetch('https://dummyjson.com/products?limit=194')
         <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <a href="product.html?id=${productos[i].id}">Ver Más</a>
+         <a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a>
 
     </article>`
     hay.style.display = "block";

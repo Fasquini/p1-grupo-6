@@ -1,5 +1,5 @@
 let form = document.querySelector('.menu form');
-let input = document.getElementById('buscador');
+let input = document.querySelector('input');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault(); 
@@ -10,7 +10,7 @@ form.addEventListener('submit', function(e) {
     document.querySelector('header.alerta p').textContent = 'Por favor escribí algo antes de buscar ';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
-    
+    return; 
   }
 
   
@@ -18,13 +18,12 @@ form.addEventListener('submit', function(e) {
     document.querySelector('header.alerta p').textContent = 'Tu búsqueda debe constar de un mínimo de 3 caracteres.';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
-     
+    return;     
   }
 
   else{
   document.querySelector('header.alerta').style.display = "none"; 
-  let valor = input.value; 
-  window.location.href = "resultados_de_busqueda.html?busqueda=" + valor
+  window.location.href = `resultados_de_busqueda.html?busqueda=${valor}`; 
 
   }
 });
@@ -78,7 +77,8 @@ for(i=0;i<productos.length;i++){
     }
     }
     let links = document.querySelectorAll(".precio a");
-  for (i = 0; i < links.length; i++) {
+  
+    for (i = 0; i < links.length; i++) {
     links[i].addEventListener("mouseover", function() {
       this.style.color = "rgba(231, 177, 0, 0.8)";
       this.style.fontSize = "16px";
