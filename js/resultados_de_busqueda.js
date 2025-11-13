@@ -82,6 +82,11 @@ fetch('https://dummyjson.com/products?limit=194')
   }
 
 }
+
+if (contenidoBusqueda.innerHTML === "") {
+  contenidoBusqueda.innerHTML = `<h2>No hay resultados para el término: "${Busqueda}"</h2>`;
+}
+
 msj.textContent += ` . . .  "${Busqueda}"`
 })
   
