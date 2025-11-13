@@ -66,5 +66,6 @@ for(i=0;i<productos.length;i++){
     </article>
     `;
 }
+pestana.innerHTML = `Booked™ | ${Busqueda}`
 }})
 

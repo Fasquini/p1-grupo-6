@@ -1,3 +1,4 @@
+let pestana = document.querySelector("head title");
 let form = document.querySelector('.menu form');
 let input = document.querySelector('input');
 
@@ -78,6 +79,7 @@ fetch('https://dummyjson.com/products?limit=194')
          <article class="precio"><a href= product.html?category=${productos[i].category}&id=${productos[i].id}  >Ver Más</a> </article>
     </article>`
     }
+    pestana.innerHTML = `Booked™ | ${Categoria}`
   }
 
   

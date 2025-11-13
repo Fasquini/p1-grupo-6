@@ -1,3 +1,4 @@
+let pestana = document.querySelector("head title");
 let form = document.querySelector('.menu form');
 let input = document.querySelector('input');
 form.addEventListener('submit', function(e) {
@@ -86,7 +87,24 @@ fetch('https://dummyjson.com/products?limit=194')
 if (contenidoBusqueda.innerHTML === "") {
   contenidoBusqueda.innerHTML = `<h2>No hay resultados para el término: "${Busqueda}"</h2>`;
 }
+msj.textContent += ` "${Busqueda}"`
 
-msj.textContent += ` . . .  "${Busqueda}"`
+pestana.innerHTML = `Booked™ | "${Busqueda}"`
+let links = document.querySelectorAll("#bu a");
+  
+    for (i = 0; i < links.length; i++) {
+    links[i].addEventListener("mouseover", function() {
+      this.style.color = "rgba(231, 177, 0, 0.8)";
+      this.style.fontSize = "16px";
+      this.style.fontWeight = "700";
+      
+    });
+    links[i].addEventListener("mouseout", function() {
+      this.style.color = "";
+      this.style.fontSize = "";
+      this.style.fontWeight = "";
+    });
+  }
+
 })
   
