@@ -51,6 +51,7 @@ fetch('https://dummyjson.com/products?limit=194')
   let destacado = document.querySelector("section#cat.aleatorio")
   let contenidoCategorias = document.querySelector("section.categoria");
   titulo.innerHTML = `${Categoria}`;
+  titulo.style.textTransform = "capitalize"
   destacado.innerHTML = "";
   contenidoCategorias.innerHTML = ""; 
 
@@ -63,8 +64,8 @@ fetch('https://dummyjson.com/products?limit=194')
   <h2>${productos[i].title}</h2>
   <p>${productos[i].description}</p>
   <p><span>Marca:</span> ${productos[i].brand}</p>
-  <p><span>Stock:</span> ${productos[i].stock}</p>
-  <p><span>Rating:</span> ${productos[i].rating}</p>
+  <p><span>Stock:</span> ${productos[i].stock} u.</p>
+  <p><span>Rating:</span> ${productos[i].rating}  ⭐</p>
   <div>
     <article class="precio"><a href= "product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}"  >Ver Más</a> </article>
     <span class ="precio">$${productos[i].price} USD</span>
