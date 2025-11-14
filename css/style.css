@@ -5,6 +5,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-attachment: fixed;
     background-size: cover;
+    margin-bottom: 0;
     
 }
 /* Cabecera */
@@ -79,8 +80,10 @@ nav.menu{
 }
 .logo img{
     width: 50px;
+    height: 70px;
     padding-left: 85px;
 }
+
 .logo img.name{
     width: 100px;
     padding-left: 65px;
@@ -115,13 +118,102 @@ button{
 /* Fin de cabecera*/
 
 /* Comienzo de secciones*/
-main{
-    display: flex;
+main {
+  width: 100%;
+  padding-top: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #111111;
+  display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    
-    
+}
+
+.fotoProducto,
+.datosProducto {
+  display: block;
+}
+.datosProducto{
+    padding-right: 0;
+}
+
+.datosProducto li{
+    list-style: none;
+}
+.fotoProducto {
+  width: 46%;
+  background-color: #005A2B;
+  border: solid 3px #D4AF37;
+  border-left: none;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.foto {
+  width: 50%;
+}
+
+.datosProducto {
+  width: 46%;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  font-size: 13px;
+}
+
+.nombreProducto {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #D4AF37;
+}
+
+.cajaPrecio {
+  margin-bottom: 18px;
+}
+
+.precio {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.descripcion {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.info {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.categ {
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.tags {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 4px;
+}
+
+.extra {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 6px;
+  font-size: 16px;
 }
 
         /* Inicio de aside con categorias*/
@@ -169,6 +261,10 @@ section.aleatorio{
 }
 section.aleatorio article{
     height: 97%;
+}
+section.categoria{
+    padding: 50px 70px 70px 50px;    
+    justify-content: space-evenly;
 }
 .aleatorio a{
 background-color: #D4AF37;
@@ -306,9 +402,14 @@ section.alea article{
 .categoria article div{
     padding: 10px 0px 15px 55%;
     width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .categoria article span{
     width: fit-content;
+    height: fit-content;
+    align-self: center;
 }
 .contenido .categoria article img{
     width: 70%;
@@ -328,11 +429,15 @@ section.alea article{
     font-weight: 700;
     color: #D4AF37;
 }
+.contenido .categoria article span{
+    font-size: 15px;
+}
 section.alea{
     background-color: #005A2B;
     
     
 }
+span.precio,
 .alea h2{
     color:rgba(231, 177, 0, 0.8);
     align-self: center;
@@ -347,6 +452,9 @@ section.alea{
     align-self: center;
     justify-self: center;
     color: #D4AF37;
+}
+.categoria article.precio{
+    border-bottom: none;
 }
 .contenido article.precio,
 .alea article.precio,
@@ -550,12 +658,6 @@ div#re.rec{
         font-weight: 700;  
 }
 
-.log div.rec{
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 30px;
-    flex-direction: row-reverse;
-}
 .rec label{
         font-weight: 700;  
 }
@@ -592,11 +694,7 @@ button.register{
     width: 15px;
     background-color: #FFFFFF;
  }
- div.hor{
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
- }
+
 .log .pais{
     display: flex;
     flex-direction: column;
@@ -634,10 +732,6 @@ span.ya a{
 }
 span.ya{
     width: 50%;
-}
-
-div#btn.r{
-margin-top: 25px;
 }
 
 
@@ -1173,5 +1267,102 @@ section.categoria {
 
 .contenido .categoria article img {
   width: 100%;
+}
+
+
+/* Bloque faltante del detalle de producto mobile */
+
+main.producto {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 20px 10px;
+}
+
+.fotoProducto,
+.datosProducto {
+    width: 100%;
+}
+
+.fotoProducto {
+    background-color: #005A2B;
+    border-radius: 12px;
+    border: solid 3px #D4AF37;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 16px;
+}
+
+.foto {
+    width: 70%;
+    width: 280px;
+}
+
+.datosProducto {
+    padding: 0;
+    font-size: 13px;
+}
+
+.nombreProducto {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.cajaPrecio {
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.precio {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.descripcion {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.info {
+    font-size: 13px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.categ {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.tags {
+    font-size: 13px;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.extra {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fotoProducto {
+    width: 100%;
+}
+
+/* Ajustes de botones y precios en mobile que no estaban en V3 */
+.alea a,
+.contenido a,
+.aleatorio a,
+.product a {
+    display: block;
+}
+
+.alea article.precio a p,
+.contenido article.precio a p {
+    font-size: 10px;
 }
 }

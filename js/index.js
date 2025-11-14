@@ -61,7 +61,7 @@ for(i=0;i<productos.length;i++){
          <img src= ${productos[i].thumbnail} alt= ${productos[i].title}>
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <article class="precio"><a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a> <a href=""><p> $${productos[i].price} USD</p></a></article>
+         <article class="precio"><a href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a> <a href=""><p> $${productos[i].price} USD</p></a></article>
          </article>
       `;
     }
@@ -71,7 +71,7 @@ for(i=0;i<productos.length;i++){
          <img src= ${productos[i].thumbnail} alt= ${productos[i].title}>
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <article class="precio"><a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a> <a href="product.html?category=${productos[i].category}id=${productos[i].id}"><p> $${productos[i].price} USD</p></a></article>
+         <article class="precio"><a href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a> <a href="product.html?category=${productos[i].category}id=${productos[i].id}"><p> $${productos[i].price} USD</p></a></article>
          </article>`
           
     }

@@ -32,40 +32,58 @@ form.addEventListener('submit', function(e) {
 
 
 
-mostrarCategoria.textContent += ` - ${categoriaProducto}`;
+let pestana = document.querySelector("head title")
 fetch('https://dummyjson.com/products?limit=194')
 .then(function(response){
   return response.json();
 })
 .then(function(AllProducts){
+  let queryStringRB = location.search;
+  let queryStringProdObj = new URLSearchParams(queryStringRB);
 let idProducto = queryStringProdObj.get("id");
   let productos = AllProducts.products
-  console.log(productos)
-  let contenidoInicio = document.querySelector("section.product");
+  let pestana = document.querySelector("head title")
   
+  console.log(queryStringRB);
+  let contenidoInicio = document.querySelector("main");
+   let nombre = queryStringProdObj.get("name");
   contenidoInicio.innerHTML = "";
 for(i=0;i<productos.length;i++){
     if(productos[i].id== idProducto ){
         contenidoInicio.innerHTML += `
-            <h2></h2>   
-    <article>
-        <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
-        <h3>Descripción</h3>
-        <p>${productos[i].description}</p>
-        <h3>Marca</h3>
-        <p>${productos[i].brand}</p>
-        <h3>Precio</h3>
-        <article class="valor">
-        <a href="">$${productos[i].price}</a>
-        </article>
-        <p>(Consultar disponibilidad)</p>
-        <h3>Categoría</h3>
-        <p><a>${productos[i].category}</a></p>
-        <h3>Stock</h3>
-        <p>${productos[i].stock} u.</p>
-    </article>
+            <section class="fotoProducto"><img src="${productos[i].thumbnail}" alt="${productos[i].title}" class="foto"></section>
+
+  <section class="datosProducto">
+
+    <h1 class="nombreProducto">${productos[i].title}</h1>
+
+    <div class="cajaPrecio">
+      <p class="precio">$${productos[i].price}</p>
+     
+    </div>
+    <p class="descripcion">
+      ${productos[i].description}
+    </p>
+
+    <h2 class="info">Marca</h2>
+    <p>${productos[i].brand}</p>
+
+    <h2 class="info">Categoría</h2>
+    <p><a href="category.html?category=${productos[i].category}" class="categ">${productos[i].category}</a></p>
+
+    <h2 class="info">Stock</h2>
+    <p>${productos[i].stock} u.</p>
+
+    <h2 class="info">Tags</h2>
+    <p class="tags">
+  <li># ${productos[i].tags[0]}</li>
+  <li># ${productos[i].tags[1]}</li>
+    </p>
+
+  </section>
+
     `;
 }
-pestana.innerHTML = `Booked™ | ${Busqueda}`
+pestana.innerHTML = `Booked™ | ${nombre}`
 }})
 

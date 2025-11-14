@@ -57,7 +57,7 @@ fetch('https://dummyjson.com/products?limit=194')
         <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a>
+         <a href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a>
 
     </article> `;
     
@@ -70,7 +70,7 @@ fetch('https://dummyjson.com/products?limit=194')
         <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <a href="product.html?category=${productos[i].category}&id=${productos[i].id}">Ver Más</a>
+         <a href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a>
 
     </article>`
     hay.style.display = "block";

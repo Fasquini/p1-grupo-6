@@ -66,7 +66,7 @@ fetch('https://dummyjson.com/products?limit=194')
   <p><span>Stock:</span> ${productos[i].stock}</p>
   <p><span>Rating:</span> ${productos[i].rating}</p>
   <div>
-    <article class="precio"><a href= product.html?category=${productos[i].category}&id=${productos[i].id}  >Ver Más</a> </article>
+    <article class="precio"><a href= "product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}"  >Ver Más</a> </article>
     <span class ="precio">$${productos[i].price} USD</span>
   </div>
 </article> `
@@ -76,7 +76,7 @@ fetch('https://dummyjson.com/products?limit=194')
      <img src=${productos[i].thumbnail} alt="${productos[i].title}">
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <article class="precio"><a href= product.html?category=${productos[i].category}&id=${productos[i].id}  >Ver Más</a> </article>
+         <article class="precio"><a href= "product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}" >Ver Más</a> </article>
     </article>`
     }
     pestana.innerHTML = `Booked™ | ${Categoria}`
