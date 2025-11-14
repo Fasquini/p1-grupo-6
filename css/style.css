@@ -79,7 +79,7 @@ nav.menu{
     margin: 0px 10px 0px 10px;
 }
 .logo img{
-    width: 50px;
+    width: 70px;
     height: 70px;
     padding-left: 85px;
 }
@@ -227,15 +227,18 @@ aside{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     
+}   nav h2{
+    margin: 30px 10px 10px 40px;
+    width: fit-content;
+    color: #D4AF37;
 }
-     
 ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 900px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 a{
     text-decoration: none;
@@ -263,8 +266,11 @@ section.aleatorio article{
     height: 97%;
 }
 section.categoria{
-    padding: 50px 70px 70px 50px;    
+    padding: 50px 100px 100px 50px;    
     justify-content: space-evenly;
+}
+section.categoria article{
+    width: 45%;
 }
 .aleatorio a{
 background-color: #D4AF37;
@@ -503,11 +509,11 @@ section.alea article img {
     color: #6B7280;
 }
 
-.categoria article{
-    width: 1080px;
+.contenido .categoria article{
+    width: 40%;
 }
-.categoria img{
-    width: 1080px;
+.contenido .categoria img{
+    width: 45%;
 }
 
 /* Inicio de Login con formato de form compartido con Register*/
