@@ -33,13 +33,13 @@ header{
     justify-content: space-between;
     width: 100%;
     justify-self: center;
-    background-color: #005A2B ;  
+    background-color: none  ;  
     margin-top: 20px;
     display: flex;
     color: #121212 ;
     padding: 20px 0px 20px 0px;
     margin: 10px 10px 40px 10px;
-    border: solid #D4AF37 3px;
+    border: solid none 3px;
     border-right: 0;
     border-left: 0;
     padding-top: 15px;
@@ -54,15 +54,23 @@ section.nave{
 }
 article.logo{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: #12432D;
+    padding: 0 10px 0 0;
+    background-color: #12432D;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 article.logr{
-    padding-right: 70px;
+    
+    padding: 0 60px 0 10px;
+        background-color: #12432D;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
 }
 article.logr,
 article.indice{
     align-content: center;
-    
 }
 article.indice{
     width: 500px;
@@ -73,21 +81,39 @@ nav input{
 nav.menu{
     display: flex;
     justify-content: space-between;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .logr a{
     margin: 0px 10px 0px 10px;
 }
+
 .logo img{
     width: 70px;
     height: 70px;
-    padding-left: 85px;
+    padding: 0 10px 0 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.logo img.Bkd{
+    width: 100%;
+    
+    background-color: none;
+    color: none;
 }
 
-.logo img.name{
-    width: 100px;
-    padding-left: 65px;
-    padding-top: 5px;
+header form{
+    display: flex;
+flex-direction: row-reverse;
+background-color: none;
+border-radius: 999px;
+background-color: #efefef;
+border: solid 3px #C6A96F;
+height: 55px;
+width: 450px;
+justify-content: center;
+background: #12432D;
+
 }
 form{
 display: flex;
@@ -97,23 +123,43 @@ flex-direction: row-reverse;
 form img{
     width: 50px ;
 }
+#buscador{
+    background: #12432D;
+}
 button,
 input{
 padding: 8px;
 border-radius: 10px;
 margin-left: 2px;
-background-color:#FFFFFF;
-color: #005A2B;
+background-color: none;
+color: #12432D;
+border-radius: 999px;
+border: none;
+}
+#buscador{
+    text-align: center;
 }
 input{
-width: 400px;
-border: solid ;
+width: 250px;
+border: none;
 text-align: center;
 padding: 14px 3px 14px 3px;
+background-color: #efefef;
+font-size: 14px;
 }
-
+button.lupa{
+    background-color: #efefef;
+    padding: 0px 0px 0px 60px;
+    padding-top: 0;
+}
 button{
     width: 85px;
+}
+button.lupa{
+    background-color: #12432D;
+}
+button.lupa img{
+    align-self: center;
 }
 /* Fin de cabecera*/
 
@@ -141,7 +187,7 @@ main {
 }
 .fotoProducto {
   width: 46%;
-  background-color: #005A2B;
+  background-color: #12432D;
   border: solid 3px #D4AF37;
   border-left: none;
   text-align: center;
@@ -219,7 +265,7 @@ main {
         /* Inicio de aside con categorias*/
 aside{
     width: 23%;
-    background-color: #005A2B ;  
+    background-color: #12432D ;  
     border-radius: 20px;
     height: 1000px;
     border: solid #D4AF37 3px;
@@ -251,7 +297,7 @@ section.aleatorio{
     width: 72%;
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #005A2B ; 
+    background-color: #12432D; 
     border-radius: 20px;
     justify-items: center;
     align-items: center;
@@ -294,10 +340,10 @@ section.aleatorio article h1{
 .contenido article a p{
     font-size: smaller;
 }
-.conenido article.card a p,
+.conenido article a p,
 .alea article a p{
     font-size:smaller;
-    color: #005A2B;
+    color: #12432D;
     border-radius: 10px;
     padding: 5px;
     background-color: #D4AF37;
@@ -324,9 +370,19 @@ section#cat.aleatorio article img{
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+section.contenido article article,
+section.contenido article p{
+    width: 85%;
+}
+
 article.precio{
         justify-items: center;
+        
     }
+article.precio a p{
+    width: fit-content;
+}
     section#cat.aleatorio article.precio a{
         margin:0;
         width: fit-content;
@@ -339,8 +395,9 @@ article.precio{
     }
 .contenido h1,
 .contenido h2{
-    color: #005A2B;
+     color: #005A2B;
     height: fit-content;
+
 }
 .aleatorio h2,
 .aleatorio h1{
@@ -357,7 +414,7 @@ article.precio{
     
 }
 section .alea{
-    background-color: #005A2B;
+    background-color: #12432D;
 }
 
 section.divisor{
@@ -399,7 +456,15 @@ section.alea article{
     width: 50%;
     display: flex;
 }
-
+.categoria div{
+    display: flex;
+    flex-direction: row;
+}
+.categoria div article.precio{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
 .alea article img{
     align-self: center;
     width: 40%;
@@ -439,7 +504,7 @@ section.alea article{
     font-size: 15px;
 }
 section.alea{
-    background-color: #005A2B;
+    background-color: #12432D;
     
     
 }
@@ -461,6 +526,7 @@ span.precio,
 }
 .categoria article.precio{
     border-bottom: none;
+  
 }
 .contenido article.precio,
 .alea article.precio,
@@ -480,7 +546,7 @@ span.precio,
     justify-content:space-evenly;
     width: 49%;
     margin-bottom: 40px;
-    margin-top: 8px;
+    margin-top: 8px; 
 }
 
 section.alea article img {
@@ -546,7 +612,7 @@ section.alea article img {
     align-self: center;
  }
  label {
-    color: #005A2B;
+    color: #12432D;
  }
  main.log section#log{
     width: 500px;
@@ -587,7 +653,7 @@ section.alea article img {
     padding: 10px;
      background-color: #FFFFFF;
     border-radius: 8px;
-    border: solid 2px #005A2B;
+    border: solid 2px #12432D;
     margin: 0;
 }
 #imp.ree{
@@ -630,7 +696,7 @@ div.pais{
 .pais select{
     width:100%;
     border-radius: 8px;
-    border: solid 2px #005A2B;
+    border: solid 2px #12432D;
     text-align: center;
 }
 select{
@@ -691,7 +757,7 @@ button.register{
     width: 49%;
     font-weight: 700;
     font-size: 16px;
-    background-color: #005A2B;
+    background-color: #12432D;
     color: #FFFFFF;
 }
 
@@ -746,7 +812,7 @@ span.ya{
 
 section.product{
     width: 100%;
-    background-color: #005A2B;
+    background-color: #12432D;
     border: solid #D4AF37 4px;
     border-left: 0;
     border-right: 0;
@@ -861,7 +927,7 @@ footer{
     width: 99%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-color: #005A2B;
+    background-color: #12432D;
     margin-top: 30px;
     
 }
@@ -918,7 +984,7 @@ section.divisor#cat{
     margin-top: 0%;
     margin-bottom: 1.5%;
     padding: 10px;
-    background-color: #005A2B;
+    background-color: #12432D;
     border-radius: 0;
 }
 
@@ -1057,7 +1123,7 @@ section.aleatorio#cat{
     aside {
     width: 94%;
     margin: 10px 0;
-    background-color: #005A2B;
+    background-color: #12432D;
     border-radius: 12px;
     padding: 8px;
     height: fit-content;
@@ -1290,7 +1356,7 @@ main.producto {
 }
 
 .fotoProducto {
-    background-color: #005A2B;
+    background-color: #12432D;
     border-radius: 12px;
     border: solid 3px #D4AF37;
     text-align: center;

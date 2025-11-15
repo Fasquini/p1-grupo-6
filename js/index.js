@@ -81,7 +81,7 @@ for(i=0;i<productos.length;i++){
     for (i = 0; i < links.length; i++) {
     links[i].addEventListener("mouseover", function() {
       this.style.color = "rgba(231, 177, 0, 0.8)";
-      this.style.fontSize = "16px";
+      this.style.fontSize = "19px";
       this.style.fontWeight = "700";
       
     });
