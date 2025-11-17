@@ -31,6 +31,7 @@ form.addEventListener('submit', function(e) {
 
 
 
+
 fetch('https://dummyjson.com/products?limit=194')
 .then(function(response){
   return response.json();
@@ -87,4 +88,18 @@ fetch('https://dummyjson.com/products?limit=194')
   if (contenidoCategorias.innerHTML === "") {
     contenidoCategorias.innerHTML = "<p>No se encontraron productos en esta categoría.</p>";
   }
+  let links = document.querySelectorAll(".precio a");
+    for (i = 0; i < links.length; i++) {
+    links[i+1].addEventListener("mouseover", function() {
+      this.style.color = "rgba(231, 177, 0, 0.8)";
+      this.style.fontSize = "19px";
+      this.style.fontWeight = "700";
+    });
+    links[i+1].addEventListener("mouseout", function() {
+      this.style.color = "";
+      this.style.fontSize = "";
+      this.style.fontWeight = "";
+    });
+  }
 })
+

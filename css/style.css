@@ -55,6 +55,9 @@ article.logr {
     background-color: none;
     border-radius: 0;
 }
+button.LogOut{
+    display: none;
+}
 article.logr,
 article.indice{
     align-content: center;
@@ -80,11 +83,10 @@ nav.menu{
     padding: 0 10px 0 10px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    
+    color: none;
 }
 .logo img.Bkd{
     width: 100%;
-    
     background-color: none;
     color: none;
 }
@@ -98,7 +100,7 @@ header form {
     width: 450px;
     background-color: #12432D;
     border-radius: 999px;
-    border: solid 3px #C6A96F;
+    border: solid 1px #D4AF37;
 }
 form{
 display: flex;
@@ -134,7 +136,8 @@ input{
     color: #FFFFFF;
 }
 button.lupa{
-    margin: 0px 0px 0px 35px;
+    padding : 0px 0px 0px 35px;
+    height: fit-content;
 }
 button{
     width: 85px;
@@ -144,6 +147,20 @@ button.lupa{
 }
 button.lupa img{
     align-self: center;
+}
+a.Bienvenida{
+    height: fit-content;
+    align-self: center;
+}
+button.LogOut{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
+    background-color: #D4AF37;
+    font-weight: 700;
+    color: #DADADA;
 }
 /* Fin de cabecera*/
 
@@ -360,19 +377,23 @@ section.contenido article p{
 
 article.precio{
         justify-items: center;
-        
+
     }
+.precio a img{
+    height: 50px;
+    width: auto;
+}
 article.precio a p{
     width: fit-content;
-}
-    section#cat.aleatorio article.precio a{
+}section#cat.aleatorio article.precio a{
         margin:0;
         width: fit-content;
         align-self: center;
         margin-right:15px ;
         padding: 20px;
-    }
-    article#bu{
+
+}   
+article#bu{
         width: 48%;
     }
 .contenido h1,
@@ -497,6 +518,7 @@ section.alea{
     border-radius: 40px;
     border: solid #D4AF37 3px;
 }
+span
 span.precio,
 .alea h2{
     color:rgba(231, 177, 0, 0.8);
@@ -640,7 +662,7 @@ section.alea article img {
     padding: 10px;
     background-color: #FFFFFF;
     color: #12432D;
-    border-radius: 8px;
+    border-radius: 999px;
     border: solid 2px #12432D;
     margin: 0;
 }
@@ -683,7 +705,7 @@ div.pais{
 }
 .pais select{
     width:100%;
-    border-radius: 8px;
+    border-radius: 999px;
     border: solid 2px #12432D;
     text-align: center;
 }
@@ -961,7 +983,7 @@ section.divisor#cat{
 }
 
 .divisor#cat h1{
-    color: #ffffffb0;
+    color: #FFFFFF;
     justify-self: center    
 }
 #noHay.divisor,

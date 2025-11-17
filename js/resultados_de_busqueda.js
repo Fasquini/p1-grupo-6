@@ -8,8 +8,7 @@ form.addEventListener('submit', function(e) {
     document.querySelector('header.alerta p').textContent = 'Por favor escribí algo antes de buscar. ';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
-    return
-    
+    return;
   }
 
   
