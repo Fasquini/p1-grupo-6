@@ -5,9 +5,10 @@ form.addEventListener('submit', function(e) {
   e.preventDefault(); 
   let valor = input.value; 
   if (valor.length === 0) {
-    document.querySelector('header.alerta p').textContent = 'Por favor escribí algo antes de buscar ';
+    document.querySelector('header.alerta p').textContent = 'Por favor escribí algo antes de buscar. ';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
+    return
     
   }
 
