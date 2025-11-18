@@ -54,8 +54,17 @@ fetch('https://dummyjson.com/products?limit=194')
   let contenidoMasComprados = document.querySelector("section.contenido");
   contenidoMasComprados.innerHTML="";
 
+let destacado = document.querySelector(".aleatorio")
+  destacado.innerHTML =``;
 for(i=0;i<productos.length;i++){
     if(productos[i].category == "mens-watches"){
+    destacado.innerHTML = `<article>
+    <h1>Recomendados</h1>
+    <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
+    <h2>${productos[i].title}</h2>
+    <p>${productos[i].description}</p>
+    <a class = "prods" href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a>
+</article>`
     contenidoInicio.innerHTML += `
     <article>
     

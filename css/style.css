@@ -178,8 +178,9 @@ main {
 main.producto {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start;
+
 }
 .fotoProducto,
 .datosProducto {
@@ -193,7 +194,7 @@ main.producto {
     list-style: none;
 }
 .fotoProducto {
-  width: 46%;
+   width: 46%;
   background-color: #12432D;
   border: solid 3px #D4AF37;
   text-align: center;
@@ -214,7 +215,9 @@ main.producto {
   padding-bottom: 60px;
   font-size: 13px;
 }
-
+a.prods{
+    width: fit-content;
+}
 .nombreProducto {
   font-size: 30px;
   font-weight: 400;
@@ -297,8 +300,9 @@ a{
 /* Seccion 1 y 2: Productos aleatorios y Mas vendidos*/
 section.aleatorio{
     width: 72%;
+    height: 950px;
+    justify-content: space-evenly;
     padding: 25px;
-    margin-bottom: 30px;
     background-color: #12432D; 
     border-radius: 20px;
     justify-items: center;
@@ -325,7 +329,16 @@ section.categoria article{
     justify-self: left;
 }
 section.aleatorio article h1{
-    margin-top: 0;
+    margin-top: 0px;
+}
+section.aleatorio article h2{
+   margin-top: 35px; 
+}
+section.aleatorio p {
+    margin-top: 35px;
+}
+section.aleatorio a.prods {
+    margin-top: 40px;
 }
 .categoria article#bu .precio,
 .contenido article.precio,
@@ -411,10 +424,22 @@ article#bu{
     margin-bottom: 50px;
 }
 .aleatorio img{
-    width: 100%;
+    width: 40%;
+    justify-self: center;
     align-self: center;
     border-radius:20px ;
+   background-color: #eeeeee;
+    padding: 10px 350px 10px 350px;
     
+}
+
+.aleatorio article{
+    display: flex;
+    flex-direction: column;
+}
+.aleatorio h1,
+.aleatorio h2{
+    color: #D4AF37;
 }
 section .alea{
     background-color: #12432D;
@@ -479,6 +504,25 @@ section.alea article{
     align-self: center;
     width: 40%;
 
+}
+section.rev{
+    width: 80%;
+    background-color: none;
+    border-radius: 20px;
+    border: 3px solid #D4AF37;
+    padding: 8px 12px;            
+}
+
+section.rev h3{
+    margin: 0 0 18px 0;
+    color: #D4AF37;
+    font-size: 15px;
+}
+section.rev p{
+    font-size: 15px;
+}
+section.rev h6{
+    font-size: 8px;
 }
 .categoria article div{
     padding: 10px 0;
@@ -879,18 +923,25 @@ article.valor a{
 .product a p{
     justify-content: center;
 }
-article.comment{
-    margin-left: 20px;
-    flex-direction: row;
-    flex-wrap: wrap;
+/* Caja de cada review */
+article.comment {
     display: flex;
+    flex-direction: column;   /* ordena todo en columna */
+    align-items: flex-start;
+    padding: 10px 16px;
+    margin: 10px 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.4);
 }
-.comment img{
-    margin-left: 10px; 
+
+/* Imagen (rating, avatar, lo que sea) */
+.comment img {
+    margin-bottom: 6px;
 }
-.comment p{
-    margin-top: 0%;
-    padding-left: 0%;
+
+/* Todos los textos de la review */
+.comment p {
+    margin: 4px 0;   /* separa cada línea sin gap */
+    padding: 0;
 }
 .product a{
     align-self: flex-end;
@@ -1372,6 +1423,7 @@ section.categoria {
 main.producto {
     flex-direction: column;
     align-items: center;
+
     padding: 0 10px 20px 10px;
 }
 

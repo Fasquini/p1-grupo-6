@@ -82,6 +82,28 @@ for(i=0;i<productos.length;i++){
 
   </section>
 
+  <section class = "rev"> 
+  <h3>Reviews</h3>
+        <article class="comment">   
+        <h4>${productos[i].reviews[0].reviewerName} - ${productos[i].reviews[0].rating} ⭐️</h4>
+        <p>${productos[i].reviews[0].reviewerEmail}</p>
+        <p>${productos[i].reviews[0].comment}</p>
+        <h6>${productos[i].reviews[0].date}</h6>
+        </article>
+        <article class="comment">
+        <h4>${productos[i].reviews[1].reviewerName} - ${productos[i].reviews[1].rating} ⭐️</h4>
+        <p>${productos[i].reviews[1].reviewerEmail}</p>
+        <p>${productos[i].reviews[1].comment}</p>
+        <h6>${productos[i].reviews[1].date}</h6>
+        </article>
+        <article class="comment">
+        <h4>${productos[i].reviews[2].reviewerName} - ${productos[i].reviews[2].rating} ⭐️</h4>
+        <p>${productos[i].reviews[2].reviewerEmail}</p>
+        <p>${productos[i].reviews[2].comment}</p>
+        <h6>${productos[i].reviews[2].date}</h6>
+        </article>
+  </section>
+
     `;
 }
 pestana.innerHTML = `Booked™ | ${nombre}`
