@@ -55,15 +55,12 @@ article.logr {
     background-color: none;
     border-radius: 0;
 }
-button.LogOut{
-    display: none;
-}
+
 article.logr,
-article.indice{
-    align-content: center;
-}
+
 article.indice{
     width: 500px;
+    align-content: center;
 }
 nav input{
     margin-right: 5px;
@@ -112,6 +109,7 @@ form img{
 }
 #buscador{
     background: #12432D;
+    text-align: center;
 }
 button,
 input{
@@ -123,9 +121,7 @@ color: #12432D;
 border-radius: 999px;
 border: none;
 }
-#buscador{
-    text-align: center;
-}
+
 input{
     width: 250px;
     border: none;
@@ -161,6 +157,7 @@ button.LogOut{
     background-color: #D4AF37;
     font-weight: 700;
     color: #DADADA;
+    display: none;
 }
 /* Fin de cabecera*/
 
@@ -349,9 +346,7 @@ section.aleatorio a.prods {
     justify-content: center;
     margin-bottom: 0%;
 }
-.contenido article a p{
-    font-size: smaller;
-}
+
 .conenido article a p,
 .alea article a p{
     font-size:smaller;
@@ -406,19 +401,14 @@ article.precio a p{
         padding: 20px;
 
 }   
-article#bu{
-        width: 48%;
-    }
+
 .contenido h1,
 .contenido h2{
      color: #005A2B;
     height: fit-content;
 
 }
-.aleatorio h2,
-.aleatorio h1{
-    color: #FFFFFF;
-}
+
 .aleatorio p{
     color: #FFFFFF;
     margin-bottom: 50px;
@@ -784,9 +774,6 @@ div#re.rec{
         font-weight: 700;  
 }
 
-.rec label{
-        font-weight: 700;  
-}
 div#btn.r{
     justify-content: center;
     margin-top: 25px;
@@ -920,9 +907,7 @@ article.valor a{
     width: 97%;
     padding-left: 1.5%;
 }
-.product a p{
-    justify-content: center;
-}
+
 /* Caja de cada review */
 article.comment {
     display: flex;
@@ -930,7 +915,7 @@ article.comment {
     align-items: flex-start;
     padding: 10px 16px;
     margin: 10px 0;
-    border-top: 1px solid rgba(212, 175, 55, 0.4);
+    border-top: 2px solid rgba(212, 175, 55, 0.4);
 }
 
 /* Imagen (rating, avatar, lo que sea) */
@@ -958,6 +943,7 @@ article.comment {
 .product a p{
     justify-self: center;
     width: fit-content;
+    justify-content: center;
 }
 ul.product{
     padding-left: 15px;
