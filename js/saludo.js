@@ -31,10 +31,4 @@ if (usuarioGuardado !== null) {
     perfilE.style.width = "40px"
     perfilE.style.height = "40px"
 
-    botonLogout.addEventListener("click", function() {
-        localStorage.removeItem("emailUsuario");
-        window.location.href = "login.html";
-
-    });
-
 }
