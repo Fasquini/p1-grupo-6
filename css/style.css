@@ -336,7 +336,7 @@ a{
 /* Seccion 1 y 2: Productos aleatorios y Mas vendidos*/
 section.aleatorio{
     width: 72%;
-    height: 950px;
+  
     justify-content: space-evenly;
     padding: 25px;
     background-color: #12432D; 
@@ -461,8 +461,8 @@ article.precio a p{
     justify-self: center;
     align-self: center;
     border-radius:20px ;
-   background-color: #eeeeee;
-    padding: 10px 350px 10px 350px;
+   background-color: none;
+    padding: 10px 0;
     
 }
 
@@ -641,7 +641,7 @@ span.precio,
 }
 
 section.alea article img {
-  background-color: #fff;
+  background-color: none;
   padding: 14px 25% 5px 25%;           
   border-radius: 12px;
   display: inline-block;  
@@ -1140,15 +1140,20 @@ section.aleatorio#cat{
     article.logr{
         width: 100%;
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        padding: 4px 0 0 0;
+        align-items: center;
+        margin-top: 6px;
+        padding: 0;
     }
-    .logr a{
+
+    a#loginLink,
+    a#registerLink{
         text-align: center;
         padding: 4px 8px;
         font-size: 14px;
+        margin: 0 10px;
     }
+
     section.divisor{
         width: 370px;
         padding: 5px 8px 5px 8px;
@@ -1172,9 +1177,10 @@ section.aleatorio#cat{
     }
 
     .logo img {
-        width: 30px;
+        width: 55px;
+        height: 55px;
         display: block;
-        padding-left: 20px;
+        padding-left: 0;
     }
     header form a img{
         width: 35px;
@@ -1217,16 +1223,6 @@ header form{
         margin-left: 6px;
     }
 
-    .logr {
-        margin-top: 8px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .logr a {
-        margin: 0 10px;
-        font-size: 14px;
-    }
    
 
     aside {
@@ -1310,13 +1306,25 @@ aside li {
     .contenido a,
     .aleatorio a,
     .product a {
-        display: inline-block;
+        display: block;
         padding: 8px 16px;
         font-size: 13px;
-        margin: 10px auto 0 auto;
+        margin: 10px 0 0 0;
         border-radius: 8px;
         text-align: center;
+        align-self: center;
     }
+    
+.aleatorio a {
+    background-color: #D4AF37;
+    padding: 8px 18px;
+    border-radius: 999px; 
+    color: #FFFFFF; 
+    display: block;
+    text-align: center;
+    align-self: center;
+    margin: 16px 0 16px 0;
+}
     
     .alea article.precio a p,
     .contenido article.precio a p {
@@ -1380,18 +1388,6 @@ aside li {
         width: 95%;
     }
 
-    /* Linea decorativa entre Login y Register (En el header)*/
-    
-    section.nave{
-        display: block;
-        padding: 0.0000001%;
-        height: 2px;
-        background-color: #D4AF37;
-        width: 70%;
-        border-radius: 15px;
-        align-self: center;
-    }
-
     /*respuesta barra de navegacion modificado en el js*/
 
     header.alerta {
@@ -1423,7 +1419,7 @@ section.categoria {
 
   section.categoria article img {
     width: 100%;                
-    height: 180px;               
+              
     border-radius: 10px;
   }
 
@@ -1451,6 +1447,37 @@ section.categoria {
   width: 100%;
 }
 
+section.aleatorio {
+    width: 100%;
+    padding: 8px 10px 12px 10px;
+    margin: 8px 0;
+    background-color: #12432D;
+    border-radius: 12px;
+    border: solid 3px #D4AF37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.aleatorio img {
+    width: 80%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+section.aleatorio h2 {
+    font-size: 18px;
+    color: #D4AF37;
+    margin: 6px 0 4px 0;
+}
+
+section.aleatorio p {
+    font-size: 13px;
+    color: #FFFFFF;
+    margin: 4px 0 6px 0;
+    padding: 0 6px;
+}
 
 /* Bloque faltante del detalle de producto mobile */
 
@@ -1548,4 +1575,20 @@ main.producto {
 .contenido article.precio a p {
     font-size: 10px;
 }
+    section#cat.aleatorio img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    }
+section.aleatorio article h1 {
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
+section.rev{
+    width: 95%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    align-self: center;
+}
+}   
