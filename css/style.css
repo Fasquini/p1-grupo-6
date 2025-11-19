@@ -204,11 +204,11 @@ main.producto {
 
 .datosProducto {
   width: 46%;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-left: 60px;
   padding-right: 50px;
   padding-bottom: 60px;
-  font-size: 13px;
+  font-size: 16px;
 }
 a.prods{
     width: fit-content;
@@ -218,6 +218,9 @@ a.prods{
   font-weight: 400;
   margin-bottom: 10px;
   color: #D4AF37;
+  margin-top: 0px;
+  border-bottom: solid 1px #D4AF37;
+  width: fit-content;
 }
 
 .cajaPrecio {
@@ -227,6 +230,38 @@ a.prods{
 .precio {
   font-size: 18px;
   margin-bottom: 6px;
+  font-family: 700;
+}
+
+.precio.VM {
+  font-size: 18px;
+  font-weight: 700;
+  width: fit-content;
+  margin-bottom: 6px;
+  color: grey;
+  text-decoration: line-through red;
+}
+.cajaPrecio article{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 0;
+}
+.descuento{
+    font-size: 18px;
+  font-weight: 700;
+  width: fit-content;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  color: red;
+}
+.precioFinal{
+    font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #D4AF37;
+  margin-top: 5px;
+
 }
 
 .descripcion {
@@ -235,15 +270,21 @@ a.prods{
 }
 
 .info {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 20px;
   margin-bottom: 4px;
 }
-
+.info.Imp{
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+}
 .categ {
   color: #D4AF37;
   text-decoration: none;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .tags {
@@ -358,6 +399,10 @@ section.aleatorio a.prods {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+#cat.aleatorio article article{
+    width: 72%;
+    align-self: center;
 }
 article.reborde{
     padding: 5px;
@@ -494,7 +539,7 @@ section.alea article{
 
 }
 section.rev{
-    width: 80%;
+    width: 45%;
     background-color: none;
     border-radius: 20px;
     border: 3px solid #D4AF37;
@@ -506,11 +551,16 @@ section.rev h3{
     color: #D4AF37;
     font-size: 15px;
 }
+.rev h4{
+    margin-bottom: 3px;
+}
 section.rev p{
     font-size: 15px;
 }
 section.rev h6{
-    font-size: 8px;
+    font-size: 10px;
+    margin-top: 10px;
+    padding-left: 50px;
 }
 .categoria article div{
     padding: 10px 0;

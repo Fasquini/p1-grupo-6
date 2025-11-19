@@ -76,9 +76,11 @@ fetch('https://dummyjson.com/products?limit=194')
      destacado.innerHTML = `
      <article>
      <img src=${productos[i].thumbnail} alt="${productos[i].title}">
+     <article>
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
          <article class="precio"><a href= "product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}" >Ver Más</a> </article>
+         </article>
     </article>`
     }
     pestana.innerHTML = `Booked™ | ${Categoria}`

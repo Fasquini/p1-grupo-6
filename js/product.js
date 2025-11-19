@@ -50,15 +50,18 @@ let idProducto = queryStringProdObj.get("id");
   contenidoInicio.innerHTML = "";
 for(i=0;i<productos.length;i++){
     if(productos[i].id== idProducto ){
+      let PreProd = productos[i].price
+      let PrecioCDesc= (PreProd)-((productos[i].discountPercentage/100)* (PreProd))
         contenidoInicio.innerHTML += `
             <section class="fotoProducto"><img src="${productos[i].thumbnail}" alt="${productos[i].title}" class="foto"></section>
 
   <section class="datosProducto">
 
     <h1 class="nombreProducto">${productos[i].title}</h1>
-
+      <p class = "info Imp">${productos[i].availabilityStatus} - ${productos[i].shippingInformation }</p>
     <div class="cajaPrecio">
-      <p class="precio">$${productos[i].price}</p>
+      <article><p class="precio VM">$${productos[i].price} </p> <p class = "descuento">  ¡%${productos[i].discountPercentage} Off!</p> </article>
+      <p class="precioFinal">Ahora: $${PrecioCDesc}</p>
      
     </div>
     <p class="descripcion">
@@ -76,8 +79,8 @@ for(i=0;i<productos.length;i++){
 
     <h2 class="info">Tags</h2>
     <p class="tags">
-  <li># ${productos[i].tags[0]}</li>
-  <li># ${productos[i].tags[1]}</li>
+  <li>#${productos[i].tags[0]}</li>
+  <li>#${productos[i].tags[1]}</li>
     </p>
 
   </section>
@@ -86,20 +89,17 @@ for(i=0;i<productos.length;i++){
   <h3>Reviews</h3>
         <article class="comment">   
         <h4>${productos[i].reviews[0].reviewerName} - ${productos[i].reviews[0].rating} ⭐️</h4>
-        <p>${productos[i].reviews[0].reviewerEmail}</p>
-        <p>${productos[i].reviews[0].comment}</p>
+        <p>"${productos[i].reviews[0].comment}"</p>
         <h6>${productos[i].reviews[0].date}</h6>
         </article>
         <article class="comment">
         <h4>${productos[i].reviews[1].reviewerName} - ${productos[i].reviews[1].rating} ⭐️</h4>
-        <p>${productos[i].reviews[1].reviewerEmail}</p>
-        <p>${productos[i].reviews[1].comment}</p>
+        <p>"${productos[i].reviews[1].comment}"</p>
         <h6>${productos[i].reviews[1].date}</h6>
         </article>
         <article class="comment">
         <h4>${productos[i].reviews[2].reviewerName} - ${productos[i].reviews[2].rating} ⭐️</h4>
-        <p>${productos[i].reviews[2].reviewerEmail}</p>
-        <p>${productos[i].reviews[2].comment}</p>
+        <p>"${productos[i].reviews[2].comment}"</p>
         <h6>${productos[i].reviews[2].date}</h6>
         </article>
   </section>
