@@ -350,6 +350,11 @@ section.aleatorio{
 section#cat.aleatorio{
     width: 75%;
 }
+
+section#hay.divisor{
+    border-radius: 20px;
+    border: solid #D4AF37 2.5px;
+}
 section.aleatorio article{
     height: 97%;
 }
