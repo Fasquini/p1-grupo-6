@@ -27,7 +27,14 @@ form.addEventListener('submit', function(e) {
   }
 });
 
-fetch('https://dummyjson.com/products?limit=194')
+let queryStringRB = location.search;
+  console.log(queryStringRB);
+  let queryStringRBObj = new URLSearchParams(queryStringRB);
+  let Busqueda = queryStringRBObj.get("busqueda");
+  console.log("Categoría elegida:", Busqueda);
+
+
+fetch('https://dummyjson.com/products/search?q='+ Busqueda)
 .then(function(response){
   return response.json();
 })
@@ -36,57 +43,31 @@ fetch('https://dummyjson.com/products?limit=194')
   let productos = AllProducts.products;
   console.log(productos);
 
-  
-  let queryStringRB = location.search;
-  console.log(queryStringRB);
-  let queryStringRBObj = new URLSearchParams(queryStringRB);
-  let Busqueda = queryStringRBObj.get("busqueda");
-  console.log("Categoría elegida:", Busqueda);
-
-  
-  let contenidoBusqueda= document.querySelector("section.contenido");
-  contenidoBusqueda.innerHTML = ""; 
-    let hay = document.querySelector('section#hay.divisor');
-    let noHay = document.querySelector('section#hay.divisor');
+  let hay = document.querySelector('section#hay.divisor');
     let msj = document.querySelector('section#hay.divisor h2')
-  
+  let noHay = document.querySelector('section#hay.divisor');
+  msj.innerHTML = `No se encontraron resultados para `
+  msj.style.display = "block"
+  noHay.style.display = "block"
+  let contenidoBusqueda= document.querySelector("section.contenido");
+if (contenidoBusqueda.innerHTML === "") {
+  noHay.style.display = "block"
+}
+else{
   for (i = 0; i < productos.length; i++) {
-    if (Busqueda == productos[i].category) {
       contenidoBusqueda.innerHTML += `
         <article id="bu">
         <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
         <h2>${productos[i].title}</h2>
         <p>${productos[i].description}</p>
-         <a href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a>
+        <a href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a>
 
     </article> `;
-    
-    hay.style.display = "block";
+  msj.innerHTML = `Se muestran resultados para `
       ;
   }
-    else if (Busqueda == productos[i].title) {
-      contenidoBusqueda.innerHTML += `
-        <article id="bu">
-        <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
-        <h2>${productos[i].title}</h2>
-        <p>${productos[i].description}</p>
-         <a href="product.html?category=${productos[i].category}&name=${productos[i].title}&id=${productos[i].id}">Ver Más</a>
-
-    </article>`
-    hay.style.display = "block";
+  }
     
-
-  }
-  else if (Busqueda==="") {
-
-    noHay.style.display = "block";
-  }
-
-}
-
-if (contenidoBusqueda.innerHTML === "") {
-  contenidoBusqueda.innerHTML = `<h2>No hay resultados para el término: "${Busqueda}"</h2>`;
-}
 msj.textContent += ` "${Busqueda}"`
 
 pestana.innerHTML = `Booked™ | "${Busqueda}"`

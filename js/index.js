@@ -51,7 +51,7 @@ fetch('https://dummyjson.com/products?limit=194')
   console.log(productos)
   let contenidoInicio = document.querySelector("section.alea");
   contenidoInicio.innerHTML = "";
-  let contenidoMasComprados = document.querySelector("section.contenido");
+  let contenidoMasComprados = document.querySelector("section.masV");
   contenidoMasComprados.innerHTML="";
 
 let destacado = document.querySelector(".aleatorio")

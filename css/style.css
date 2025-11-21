@@ -347,12 +347,16 @@ section.aleatorio{
     margin-bottom: 0%;
     border: solid #D4AF37 3px;
 }
+section#cat.aleatorio{
+    width: 75%;
+}
 section.aleatorio article{
     height: 97%;
 }
 section.categoria{
-    padding: 50px 100px 100px 50px;    
+     
     justify-content: space-evenly;
+    width: 100vw;
 }
 section.categoria article{
     width: 45%;
@@ -376,6 +380,7 @@ section.aleatorio p {
 section.aleatorio a.prods {
     margin-top: 40px;
 }
+.masV article.precio,
 .categoria article#bu .precio,
 .contenido article.precio,
 .alea article.precio{
@@ -399,6 +404,7 @@ section.aleatorio a.prods {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
 }
 #cat.aleatorio article article{
     width: 72%;
@@ -419,8 +425,8 @@ section#cat.aleatorio article img{
 #cat.aleatorio p{
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
+section .masV article p,
+section .masV article article,
 section.contenido article article,
 section.contenido article p{
     width: 85%;
@@ -444,7 +450,8 @@ article.precio a p{
         padding: 20px;
 
 }   
-
+.masV h2,
+.masV h2,
 .contenido h1,
 .contenido h2{
      color: #005A2B;
@@ -488,13 +495,20 @@ section.divisor{
     border-radius: 40px;
 }
 section.alea,
-section.contenido{
+section.masV{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    padding: 20px 5px 20px 5px;
 }
+
+section.contenido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .categoria div.category,
 .categoria div.category a{
     padding: 6px 0px 15px 0px;
@@ -505,13 +519,14 @@ section.contenido{
 .categoria{
     display: flex;
     flex-wrap: wrap;
-    padding: 150px;
+    width: 1200px;
 }
 section.alea article{
     display: flex;
 }
+
 .contenido .categoria article{
-    width: 50%;
+    width: 99%;
     display: flex;
 }
 .categoria div{
@@ -574,17 +589,22 @@ section.rev h6{
     height: fit-content;
     align-self: center;
 }
+
 .contenido .categoria article img{
     width: 70%;
     align-self: center;
 }
 .alea article h2,
 .alea article p,
+.masV .categoria article h2,
+.masV .categoria article p,
 .contenido .categoria article h2,
 .contenido .categoria article p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 90%;
 }
+.masV .categoria article h2,
+.masV .categoria article span,
 .contenido .categoria article h2,
 .contenido .categoria article span{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -592,6 +612,7 @@ section.rev h6{
     font-weight: 700;
     color: #D4AF37;
 }
+.masV .categoria article span,
 .contenido .categoria article span{
     font-size: 15px;
 }
@@ -621,14 +642,17 @@ span.precio,
     border-bottom: none;
   
 }
+.masV article#bu,
 .categoria article,
 .contenido article#bu {
     border-bottom: solid 3px #D4AF37;
 }
+.masV article.category,
 .categoria article#bu article.precio,
 .contenido article.category{
     border-bottom: none;
 }
+.masV article,
 .alea article,
 .contenido article{
     display:flex;
@@ -646,18 +670,19 @@ section.alea article img {
   border-radius: 12px;
   display: inline-block;  
 }
-
+.masV img,
 .alea img,
 .contenido img{
     width: 50%;
     border-radius: 10px;
     align-self: center;
 }
+.masV p,
 .alea img,
 .contenido p{
     color: #121212;
 }
-
+.masV a,
 .contenido a{
     padding: 15px;
     border-radius: 10px;
@@ -665,7 +690,7 @@ section.alea article img {
     justify-self: center;
     color: #6B7280;
 }
-
+.masV .categoria article,
 .contenido .categoria article{
     width: 40%;
 }
@@ -973,7 +998,7 @@ article.comment {
 
 /* Todos los textos de la review */
 .comment p {
-    margin: 4px 0;   /* separa cada línea sin gap */
+    margin: 4px 0;    
     padding: 0;
 }
 .product a{
@@ -1090,7 +1115,7 @@ article#bu{
     width: 32.33333333333%;
 }
 section.aleatorio#cat{
-    width: 99%;
+    width: 70%;
 }
 #cat article{
     width: 100%;
@@ -1267,9 +1292,15 @@ aside li {
         text-align: start;
         padding: 10px 10px 10px 0;
         margin-left: 10px;
+        
     }
 
-    section#cat.aleatorio,
+    section#cat.aleatorio{
+        width: 75%;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
     section.aleatorio,
     section.alea,
     section.contenido,
