@@ -1223,7 +1223,10 @@ header form{
         margin-left: 6px;
     }
 
-   
+    a#loginLink {
+        align-self: flex-end;
+        margin-left: 20%;
+    }
 
     aside {
     width: 94%;
@@ -1336,7 +1339,9 @@ aside li {
         justify-items: center;
     }
     section#cat.aleatorio article.precio a{
-        margin:0px 0px 0px 135px;
+        margin:10px 0px 0px 0px;
+        padding: 10px;
+        width: 60px;
     }
     article#bu{
         width: 48%;
@@ -1427,7 +1432,7 @@ section.categoria {
     font-size: 18px;
     margin: 8px 4px;
     text-align: center;
-  }
+  } 
 
   section.categoria p {
     font-size: 14px;
@@ -1575,10 +1580,10 @@ main.producto {
 .contenido article.precio a p {
     font-size: 10px;
 }
-    section#cat.aleatorio img {
-    width: 100%;
+    section#cat.aleatorio article img {
+    width: 75%;
     border-radius: 12px;
-    margin-top: 10px;
+    margin-top: 10px ;
     margin-bottom: 12px;
     }
 section.aleatorio article h1 {
