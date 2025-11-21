@@ -1296,7 +1296,7 @@ aside li {
     }
 
     section#cat.aleatorio{
-        width: 75%;
+        width: 98%;
         box-sizing: border-box;
         border-radius: 12px;
     }
@@ -1626,5 +1626,13 @@ section.rev{
     padding: 8px 12px;
     margin: 8px 0;
     align-self: center;
+}
+section.masV article p {
+    margin-right: 20px;   
+}
+
+aside h2{
+   margin-left: 20px;
+   margin-top: 13px;
 }
 }   
