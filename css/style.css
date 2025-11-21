@@ -354,6 +354,7 @@ section#cat.aleatorio{
 section#hay.divisor{
     border-radius: 20px;
     border: solid #D4AF37 2.5px;
+    order: -1;
 }
 section.aleatorio article{
     height: 97%;
@@ -512,6 +513,11 @@ section.contenido{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+section.contenido.rtados{
+    width: 75%;
+    order: -1;
+    height: fit-content;
 }
 
 .categoria div.category,
@@ -1166,12 +1172,14 @@ section.aleatorio#cat{
     }
     header input{
         width: 100%;
+         order: 3;
     }
     article.logr{
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: flex-end;
         margin-top: 6px;
         padding: 0;
     }
@@ -1221,6 +1229,7 @@ header form{
     height: 48px;
     margin-top: 6px;
     margin-bottom: 6px;
+     order: 3;
 }
 
     .list {
@@ -1239,6 +1248,7 @@ header form{
         display: flex;
         justify-content: center;
         align-items: center;
+        order: 3;
     }
 
     nav input {
@@ -1316,6 +1326,10 @@ aside li {
         box-sizing: border-box;
         border-radius: 12px;
     }
+    section.contenido.rtados{
+    width: 100%;
+   
+}
 
     .alea article,
     .contenido article {
@@ -1439,7 +1453,11 @@ aside li {
 header.alerta p {
   text-align: center;
 }
-
+button.lupa img{
+    width: 40px;
+    padding-right: 30px;
+    border-color: none;
+}
 /*media querie del contendio de la api*/
 
 section.categoria {
@@ -1637,7 +1655,7 @@ section.masV article p {
 }
 
 aside h2{
-   margin-left: 20px;
+   margin-left: 5px;
    margin-top: 13px;
 }
 }   
