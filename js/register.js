@@ -7,7 +7,7 @@ let checkbox = document.querySelector('input[name="t&c"]');
 
 let mensajes = document.querySelectorAll('#log p');
 
-let emailError = mensajes[0];
+let emailError = mensajes[0];   
 let contraError = mensajes[1];
 let contraChequeoError = mensajes[2];
 let paisError = mensajes[3]; 

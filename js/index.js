@@ -57,7 +57,7 @@ fetch('https://dummyjson.com/products?limit=194')
 let destacado = document.querySelector(".aleatorio")
   destacado.innerHTML =``;
 for(i=0;i<productos.length;i++){
-    if(productos[i].category == "mens-watches"){
+    if(productos[i].category == "mobile-accessories"){
     destacado.innerHTML = `<article>
     <h1>Recomendados</h1>
     <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
@@ -75,7 +75,7 @@ for(i=0;i<productos.length;i++){
          </article>
       `;
     }
-    if(productos[i].category == "mens-shoes"){
+    if(productos[i].category == "kitchen-accessories"){
         contenidoMasComprados.innerHTML += `<article>
     
          <img src= ${productos[i].thumbnail} alt= ${productos[i].title}>

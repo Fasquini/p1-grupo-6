@@ -85,13 +85,24 @@ fetch('https://dummyjson.com/products?limit=194')
     }
     pestana.innerHTML = `Booked™ | ${Categoria}`
   }
-
-  
+  let categs = document.querySelectorAll("aside ul li a");
+  for (i = 0; i < categs.length; i++) {
+    categs[i].addEventListener("mouseover", function() {
+      this.style.color = "rgba(231, 177, 0, 0.8)";
+      this.style.fontSize = "30px";
+      this.style.fontWeight = "700";
+      
+    });
+    categs[i].addEventListener("mouseout", function() {
+      this.style.color = "";
+      this.style.fontSize = "";
+      this.style.fontWeight = "";
+    });}
   if (contenidoCategorias.innerHTML === "") {
     contenidoCategorias.innerHTML = "<p>No se encontraron productos en esta categoría.</p>";
   }
   let links = document.querySelectorAll(".precio a");
-    for (i = 0; i < links.length; i++) {
+  for (i = 0; i < links.length; i++) {
     links[i+1].addEventListener("mouseover", function() {
       this.style.color = "rgba(231, 177, 0, 0.8)";
       this.style.fontSize = "19px";
@@ -102,8 +113,10 @@ fetch('https://dummyjson.com/products?limit=194')
       this.style.fontSize = "";
       this.style.fontWeight = "";
     });
+    
   }
 })
+
 
 fetch('https://dummyjson.com/products/search?q='+ Busqueda)
 .then(function(response){
@@ -143,8 +156,7 @@ msj.textContent += ` "${Busqueda}"`
 
 pestana.innerHTML = `Booked™ | "${Busqueda}"`
 let links = document.querySelectorAll("#bu a");
-  
-    for (i = 0; i < links.length; i++) {
+  for (i = 0; i < links.length; i++) {
     links[i].addEventListener("mouseover", function() {
       this.style.color = "rgba(231, 177, 0, 0.8)";
       this.style.fontSize = "16px";
@@ -157,5 +169,6 @@ let links = document.querySelectorAll("#bu a");
       this.style.fontWeight = "";
     });
   }
+  
 
 })
