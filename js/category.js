@@ -8,7 +8,7 @@ form.addEventListener('submit', function(e) {
   let valor = input.value; 
 
   if (valor.length === 0) {
-    document.querySelector('header.alerta p').textContent = 'Por favor escribí algo antes de buscar. ';
+    document.querySelector('header.alerta p').innerText = 'Por favor escribí algo antes de buscar. ';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
     return; 
@@ -16,7 +16,7 @@ form.addEventListener('submit', function(e) {
 
   
   if (valor.length < 3) {
-    document.querySelector('header.alerta p').textContent = 'Tu búsqueda debe constar de un mínimo de 3 caracteres.';
+    document.querySelector('header.alerta p').innerText = 'Tu búsqueda debe constar de un mínimo de 3 caracteres.';
     document.querySelector('header.alerta').style.display = "flex";
     document.querySelector('header').style.marginBottom = "5px";
     return;     
@@ -152,7 +152,7 @@ else{
   }
   }
     
-msj.textContent += ` "${Busqueda}"`
+msj.innertext += ` "${Busqueda}"`
 
 pestana.innerHTML = `Booked™ | "${Busqueda}"`
 let links = document.querySelectorAll("#bu a");

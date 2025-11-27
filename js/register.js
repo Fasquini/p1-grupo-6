@@ -1,9 +1,9 @@
 let formulario = document.querySelector("#log form");
-
-let inputEmail = document.querySelector('input[name="mailUsuario"]');
-let inputContrasena = document.querySelector('input[name="contraseñaUsuario"]');
-let inputContraseñaChequeo = document.querySelector('input[name="contraseñaUsuarioCheck"]');
-let checkbox = document.querySelector('input[name="t&c"]');
+let form = document.querySelectorAll("form input")
+let inputEmail = form[1];
+let inputContrasena = form[2];
+let inputContraseñaChequeo = form[3];
+let checkbox = form[7];
 
 let mensajes = document.querySelectorAll('#log p');
 
